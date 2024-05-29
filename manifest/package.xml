@@ -1,36 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <types>
-        <members>*</members>
-        <name>ApexClass</name>
+  <types>
+        <members>AppSwitcher</members>
+        <name>AppMenu</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexComponent</name>
+        <members>Account.Email__c</members>
+        <name>CustomField</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexPage</name>
+        <members>Recurring_Donations__c</members>
+        <members>Transaction__c</members>
+        <name>CustomObject</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
+        <members>Recurring_Donations__c</members>
+        <members>Transaction__c</members>
+        <name>CustomTab</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
+        <members>BUP_Accounting</members>
+        <name>CustomApplication</name>
     </types>
     <types>
-        <members>*</members>
-        <name>AuraDefinitionBundle</name>
+        <members>BUP_Accounting_UtilityBar</members>
+        <name>FlexiPage</name>
     </types>
     <types>
-        <members>*</members>
-        <name>LightningComponentBundle</name>
+        <members>Fiscal_Year</members>
+        <name>GlobalValueSet</name>
     </types>
     <types>
-        <members>*</members>
-        <name>StaticResource</name>
+        <members>Account-Account Layout</members>
+        <members>Recurring_Donations__c-Recurring Donation Layout</members>
+        <members>Transaction__c-Transaction Layout</members>
+        <name>Layout</name>
+    </types>
+ <types>
+        <members>BUP_Accountant_Core</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <name>Profile</name>
     </types>
     <version>59.0</version>
 </Package>

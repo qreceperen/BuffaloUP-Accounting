@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Recurring Donation</fullName>
+                <default>false</default>
+                <label>Recurring Donation</label>
+            </value>
+            <value>
+                <fullName>One-time Donation</fullName>
+                <default>false</default>
+                <label>One-time Donation</label>
+            </value>
+            <value>
+                <fullName>Sadaka</fullName>
+                <default>false</default>
+                <label>Sadaka</label>
+            </value>
+            <value>
+                <fullName>Youth Program</fullName>
+                <default>false</default>
+                <label>Youth Program</label>
+            </value>
+            <value>
+                <fullName>Facebook Donations</fullName>
+                <default>false</default>
+                <label>Facebook Donations</label>
+            </value>
+            <value>
+                <fullName>Other Income</fullName>
+                <default>false</default>
+                <label>Other Income</label>
+            </value>
+            <value>
+                <fullName>Kira-Rumi</fullName>
+                <default>false</default>
+                <label>Kira-Rumi</label>
+            </value>
+            <value>
+                <fullName>Dialog Commitee</fullName>
+                <default>false</default>
+                <label>Dialog Commitee</label>
+            </value>
+            <value>
+                <fullName>Business Expense</fullName>
+                <default>false</default>
+                <label>Business Expense</label>
+            </value>
+            <value>
+                <fullName>Community Events</fullName>
+                <default>false</default>
+                <label>Community Events</label>
+            </value>
+            <value>
+                <fullName>Mentor Burs</fullName>
+                <default>false</default>
+                <label>Mentor Burs</label>
+            </value>
+            <value>
+                <fullName>Talebe Rehberlik</fullName>
+                <default>false</default>
+                <label>Talebe Rehberlik</label>
+            </value>
+            <value>
+                <fullName>Collage Mentorship</fullName>
+                <default>false</default>
+                <label>Collage Mentorship</label>
+            </value>
+            <value>
+                <fullName>Other Expenses</fullName>
+                <default>false</default>
+                <label>Other Expenses</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
