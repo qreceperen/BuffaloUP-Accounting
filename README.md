@@ -1,18 +1,62 @@
-# Salesforce DX Project: Next Steps
+# Salesforce Project Summary
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## **Business Requirements**
 
-## How Do You Plan to Deploy Your Changes?
+1. **Tracking Promised Donations and Payments**:
+    - Record and track individual donor pledges (recurring donations).
+    - Track payments made towards these pledges.
+    - Calculate total paid and outstanding amounts for each pledge.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+2. **Tracking Different Sources of Income and Expenses**:
+    - Record various types of income (e.g., donations, Facebook, other income).
+    - Record different types of expenses (e.g., picnic, programs).
 
-## Configure Your Salesforce DX Project
+## **Solution Overview**
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+### **Objects and Fields**
 
-## Read All About It
+1. **Account (Donor)**
+    - Standard Salesforce object to store donor information.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+2. **Recurring Donations (Custom Object)**
+    - Track pledges and recurring donation commitments.
+    - **Fields**:
+        1. Account (Lookup to Account)
+        2. **Amount Promised** (Currency)
+        3. **Donation Date** (Date)
+        4. **Fiscal Year** (Picklist)
+            - Global Picklist Value
+        5. **Description** (Text Area)
+        6. **Status** (Picklist)
+            - Values: Pending, Active, Completed, Cancelled
+        7. **Total Paid** (Formula)
+        8. **Amount Outstanding** (Formula)
+
+3. **Transaction (Custom Object)**
+    - Record all financial transactions, including income and expenses.
+    - **Fields**:
+        1. **Transaction Type** (Picklist)
+            - Values: Income, Expense
+        2. **Category** (Picklist)
+            - Values: Facebook, Picnic, Rehberlik, etc.
+        3. **Amount** (Currency)
+        4. **Transaction Date** (Date)
+        5. **Description** (Text Area)
+        6. **Fiscal Year** (Picklist)
+            - Values: FY2024, FY2025, FY2026, etc.
+        7. **Transaction Name** (Text)
+        8. Account (Optional Lookup to Account)
+
+### **Key Features**
+
+1. **Recurring Donations**:
+    - Track individual donor pledges and commitments.
+    - Monitor total amounts paid and outstanding.
+
+2. **Transactions**:
+    - Record various income sources and expenses.
+    - Maintain detailed financial records for accurate reporting and analysis.
+
+---
+
+**Note**: To access the application, users need to be assigned the permission set `BUP_Accountant_Core`.
