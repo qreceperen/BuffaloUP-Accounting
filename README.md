@@ -59,4 +59,4 @@
 
 ---
 
-**Note**: To access the application, users need to be assigned the permission set `BUP_Accountant_Core`.
+**Note**: To access the application, users need to be assigned the permission set `BUP_Accountant_Core`
