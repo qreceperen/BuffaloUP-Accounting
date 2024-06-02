@@ -1,0 +1,28 @@
+name: CI for Salesforce
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Salesforce CLI
+        run: |
+          npm install sfdx-cli --global
+          sf version
+
+      - name: Authenticate with Salesforce
+        run: |
+          echo "$SF_SFDX_HUB_KEY" > server.key
+          sf org login jwt --client-id ${{ secrets.SF_CONSUMER_KEY }} --jwt-key-file server.key --username ${{ secrets.SF_USERNAME }} --instance-url https://test.salesforce.com --alias DevHub
+
+      - name: Validate deployment to Salesforce sandbox
+        run: |
+          $ sf project deploy start --source-dir force-app --target-org ${{ secrets.SF_USERNAME }} --dry-run
