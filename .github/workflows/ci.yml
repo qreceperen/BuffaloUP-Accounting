@@ -15,7 +15,7 @@ jobs:
 
       - name: Install Salesforce CLI
         run: |
-          npm install sfdx-cli --global
+          npm install @salesforce/cli --global
           sf version
 
       - name: Authenticate with Salesforce
@@ -25,4 +25,4 @@ jobs:
 
       - name: Validate deployment to Salesforce sandbox
         run: |
-          $ sf project deploy start --source-dir force-app --target-org ${{ secrets.SF_USERNAME }} --dry-run
+          sf project deploy start --source-dir force-app --target-org ${{ secrets.SF_USERNAME }} --dry-run
