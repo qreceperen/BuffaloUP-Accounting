@@ -28,4 +28,4 @@ jobs:
 
       - name: Validate deployment to Salesforce sandbox
         run: |
-          sf project deploy start --source-dir force-app --target-org ${{ secrets.SF_USERNAME }} --dry-run
+          sf project deploy start --manifest manifest/package.xml --target-org ${{ secrets.SF_USERNAME }} --dry-run

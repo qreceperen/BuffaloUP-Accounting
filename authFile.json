@@ -1,0 +1,11 @@
+{
+  "code": 2,
+  "context": "OrgDisplayCommand",
+  "commandName": "OrgDisplayCommand",
+  "message": "Parsing --target-org \n\tNo authorization information found for my-org.\nSee more help with --help",
+  "name": "NamedOrgNotFoundError",
+  "status": 2,
+  "stack": "NamedOrgNotFoundError: Parsing --target-org \n\tNo authorization information found for my-org.\nSee more help with --help\n    at Messages.createError (C:\\Users\\recep\\AppData\\Local\\sf\\client\\2.42.6-2b3c407\\node_modules\\@salesforce\\core\\lib\\messages.js:444:16)\n    at AuthInfo.init (C:\\Users\\recep\\AppData\\Local\\sf\\client\\2.42.6-2b3c407\\node_modules\\@salesforce\\core\\lib\\org\\authInfo.js:626:28)\n    at async AuthInfo.create (C:\\Users\\recep\\AppData\\Local\\sf\\client\\2.42.6-2b3c407\\node_modules\\@salesforce\\kit\\lib\\creatable.js:57:9)\n    at async Org.init (C:\\Users\\recep\\AppData\\Local\\sf\\client\\2.42.6-2b3c407\\node_modules\\@salesforce\\core\\lib\\org\\org.js:866:27)\n    at async Org.create (C:\\Users\\recep\\AppData\\Local\\sf\\client\\2.42.6-2b3c407\\node_modules\\@salesforce\\kit\\lib\\creatable.js:57:9)\n    at async maybeGetOrg (file:///C:/Users/recep/AppData/Local/sf/client/2.42.6-2b3c407/node_modules/@salesforce/sf-plugins-core/lib/flags/orgFlags.js:13:16)\n    at async getOrgOrThrow (file:///C:/Users/recep/AppData/Local/sf/client/2.42.6-2b3c407/node_modules/@salesforce/sf-plugins-core/lib/flags/orgFlags.js:46:17)\n    at async parseFlagOrThrowError (C:\\Users\\recep\\AppData\\Local\\sf\\client\\2.42.6-2b3c407\\node_modules\\@oclif\\core\\lib\\parser\\parse.js:280:24)\n    at async C:\\Users\\recep\\AppData\\Local\\sf\\client\\2.42.6-2b3c407\\node_modules\\@oclif\\core\\lib\\parser\\parse.js:416:88\n    at async Promise.all (index 1)",
+  "exitCode": 2,
+  "warnings": []
+}
