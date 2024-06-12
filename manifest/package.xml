@@ -5,6 +5,10 @@
         <name>AppMenu</name>
     </types>
     <types>
+        <members>BUP_Accounting</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
         <members>Account.Email__c</members>
         <name>CustomField</name>
     </types>
@@ -19,16 +23,24 @@
         <name>CustomTab</name>
     </types>
     <types>
-        <members>BUP_Accounting</members>
-        <name>CustomApplication</name>
+        <members>Account_Record_Page</members>
+        <members>BUP_Accounting_UtilityBar</members>
+        <members>Home_Page_Default</members>
+        <name>FlexiPage</name>
     </types>
     <types>
-        <members>BUP_Accounting_UtilityBar</members>
-        <name>FlexiPage</name>
+        <members>Update_Recurring_Donation_Totals_on_Transaction_Change</members>
+        <name>Flow</name>
     </types>
     <types>
         <members>Fiscal_Year</members>
         <name>GlobalValueSet</name>
+    </types>
+    <types>
+        <members>Transaction__c.All </members>
+        <members>Transaction__c.All_Income</members>
+        <members>Transaction__c.All_Expenses</members>
+        <name>ListView</name>
     </types>
     <types>
         <members>Account-Account Layout</members>
@@ -43,6 +55,13 @@
     <types>
         <members>Admin</members>
         <name>Profile</name>
+    </types>
+    <types>
+        <members>unfiled$public/Income_and_Expense_Table_QK3</members>
+        <members>unfiled$public/Income_and_Expenses_According_to_Category_9oj</members>
+        <members>unfiled$public/Recurring_Donations_Summary_Zsf</members>
+        <members>unfiled$public/Recurring_Donation_in_Detail_Sb7</members>
+        <name>Report</name>
     </types>
     <version>59.0</version>
 </Package>
