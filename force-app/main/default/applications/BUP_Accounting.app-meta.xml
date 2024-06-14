@@ -14,8 +14,6 @@
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
     <tabs>standard-Account</tabs>
-    <tabs>Recurring_Donations__c</tabs>
-    <tabs>Transaction__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>BUP_Accounting_UtilityBar</utilityBar>
 </CustomApplication>

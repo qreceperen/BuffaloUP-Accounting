@@ -9,16 +9,6 @@
         <name>CustomField</name>
     </types>
     <types>
-        <members>Recurring_Donations__c</members>
-        <members>Transaction__c</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>Recurring_Donations__c</members>
-        <members>Transaction__c</members>
-        <name>CustomTab</name>
-    </types>
-    <types>
         <members>BUP_Accounting</members>
         <name>CustomApplication</name>
     </types>
@@ -32,8 +22,6 @@
     </types>
     <types>
         <members>Account-Account Layout</members>
-        <members>Recurring_Donations__c-Recurring Donation Layout</members>
-        <members>Transaction__c-Transaction Layout</members>
         <name>Layout</name>
     </types>
  <types>
