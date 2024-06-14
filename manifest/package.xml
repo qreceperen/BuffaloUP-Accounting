@@ -13,12 +13,6 @@
         <name>CustomField</name>
     </types>
     <types>
-        <members>Account_Record_Page</members>
-        <members>BUP_Accounting_UtilityBar</members>
-        <members>Home_Page_Default</members>
-        <name>FlexiPage</name>
-    </types>
-    <types>
         <members>Fiscal_Year</members>
         <name>GlobalValueSet</name>
     </types>
@@ -33,13 +27,6 @@
     <types>
         <members>Admin</members>
         <name>Profile</name>
-    </types>
-    <types>
-        <members>unfiled$public/Income_and_Expense_Table_QK3</members>
-        <members>unfiled$public/Income_and_Expenses_According_to_Category_9oj</members>
-        <members>unfiled$public/Recurring_Donations_Summary_Zsf</members>
-        <members>unfiled$public/Recurring_Donation_in_Detail_Sb7</members>
-        <name>Report</name>
     </types>
     <version>59.0</version>
 </Package>
