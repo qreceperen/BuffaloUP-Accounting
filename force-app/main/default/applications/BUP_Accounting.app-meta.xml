@@ -40,8 +40,6 @@
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
     <tabs>standard-Account</tabs>
-    <tabs>Recurring_Donations__c</tabs>
-    <tabs>Transaction__c</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <uiType>Lightning</uiType>

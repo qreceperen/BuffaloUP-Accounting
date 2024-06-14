@@ -13,39 +13,17 @@
         <name>CustomField</name>
     </types>
     <types>
-        <members>Recurring_Donations__c</members>
-        <members>Transaction__c</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>Recurring_Donations__c</members>
-        <members>Transaction__c</members>
-        <name>CustomTab</name>
-    </types>
-    <types>
         <members>Account_Record_Page</members>
         <members>BUP_Accounting_UtilityBar</members>
         <members>Home_Page_Default</members>
         <name>FlexiPage</name>
     </types>
     <types>
-        <members>Update_Recurring_Donation_Totals_on_Transaction_Change</members>
-        <name>Flow</name>
-    </types>
-    <types>
         <members>Fiscal_Year</members>
         <name>GlobalValueSet</name>
     </types>
     <types>
-        <members>Transaction__c.All </members>
-        <members>Transaction__c.All_Income</members>
-        <members>Transaction__c.All_Expenses</members>
-        <name>ListView</name>
-    </types>
-    <types>
         <members>Account-Account Layout</members>
-        <members>Recurring_Donations__c-Recurring Donation Layout</members>
-        <members>Transaction__c-Transaction Layout</members>
         <name>Layout</name>
     </types>
  <types>
