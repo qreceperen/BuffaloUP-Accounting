@@ -13,14 +13,60 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>Expense__c</members>
+        <members>Expense_Budget__c</members>
+        <members>Income__c</members>
+        <members>Income_Budget__c</members>
+        <members>Recurring_Donation__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Expense__c</members>
+        <members>Expense_Budget__c</members>
+        <members>Income__c</members>
+        <members>Income_Budget__c</members>
+        <members>Recurring_Donation__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>PublicDashboards</members>
+        <name>DashboardFolder</name>
+    </types>
+    <types>
+        <members>Account_Record_Page</members>
+        <members>BUP_Accounting_UtilityBar</members>
+        <members>FlowsApp_UtilityBar</members>
+        <members>Income_Budget_Record_Page</members>
+        <members>Income_Record_Page</members>
+        <members>Expense_Budget_Record_Page</members>
+        <members>Expense_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Calculate_Total_Amount_Spent</members>
+        <members>BUP_Calculate_Total_Amount_Income</members>
+        <name>Flow</name>
+    </types>
+    <types>
         <members>Fiscal_Year</members>
         <name>GlobalValueSet</name>
     </types>
     <types>
         <members>Account-Account Layout</members>
+        <members>Expense_Budget__c-ExpenseBudget Layout</members>
+        <members>Income_Budget__c-IncomeBudget Layout</members>
+        <members>Income__c-Income Layout</members>
+        <members>Recurring_Donation__c-Recurring Donation Layout</members>
         <name>Layout</name>
     </types>
- <types>
+    <types>
+        <members>Expense__c.All</members>
+        <members>Expense_Budget__c.All</members>
+        <members>Income__c.All</members>
+        <members>Income_Budget__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
         <members>BUP_Accountant_Core</members>
         <name>PermissionSet</name>
     </types>
@@ -28,5 +74,17 @@
         <members>Admin</members>
         <name>Profile</name>
     </types>
+    <types>
+        <members>unfiled$public/Expense_Budget_Details_hox</members>
+        <members>unfiled$public/Expense_Transactions_Details_knX</members>
+        <members>unfiled$public/Income_Budget_Details_LMK</members>
+        <members>unfiled$public/Income_Transaction_Details_o79</members>
+        <name>Report</name>
+    </types>
+    <types>
+        <members>EnhancedNotes</members>
+        <name>Settings</name>
+    </types>
+
     <version>59.0</version>
 </Package>
