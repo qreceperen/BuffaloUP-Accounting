@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <customValue>
-        <fullName>2023 - 2024 FY</fullName>
-        <default>true</default>
-        <label>2023 - 2024 FY</label>
+        <fullName>24/25_FY</fullName>
+        <default>false</default>
+        <label>24/25 FY</label>
     </customValue>
     <customValue>
-        <fullName>2024 - 2025 FY</fullName>
+        <fullName>25/26_FY</fullName>
         <default>false</default>
-        <label>2024 - 2025 FY</label>
+        <label>25/26 FY</label>
     </customValue>
     <customValue>
-        <fullName>2025 - 2026 FY</fullName>
+        <fullName>26/27_FY</fullName>
         <default>false</default>
-        <label>2025 - 2026 FY</label>
+        <label>26/27 FY</label>
     </customValue>
-    <customValue>
-        <fullName>2026 - 2027 FY</fullName>
-        <default>false</default>
-        <label>2026 - 2027 FY</label>
-    </customValue>
-    <description>Fiscal year for Buffalo UP foundation</description>
+    <description>Fiscal year for Buffalo UP foundation.
+Buffalo Up Fiscal Year starts from July to June. 23/24 FY means 1 July 2023 to 31 June 2024</description>
     <masterLabel>Fiscal Year</masterLabel>
     <sorted>false</sorted>
 </GlobalValueSet>

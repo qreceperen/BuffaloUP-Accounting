@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expense_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Expense Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dialog Commitee</fullName>
+                <default>false</default>
+                <label>Dialog Commitee</label>
+            </value>
+            <value>
+                <fullName>Fairs</fullName>
+                <default>false</default>
+                <label>Fairs</label>
+            </value>
+            <value>
+                <fullName>Educational</fullName>
+                <default>false</default>
+                <label>Educational</label>
+            </value>
+            <value>
+                <fullName>Mentor Burs</fullName>
+                <default>false</default>
+                <label>Mentor Burs</label>
+            </value>
+            <value>
+                <fullName>Business Expenses</fullName>
+                <default>false</default>
+                <label>Business Expenses</label>
+            </value>
+            <value>
+                <fullName>Community Event</fullName>
+                <default>false</default>
+                <label>Community Event</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Talebe Rehberlik</fullName>
+                <default>false</default>
+                <label>Talebe Rehberlik</label>
+            </value>
+            <value>
+                <fullName>Talebe Gezi</fullName>
+                <default>false</default>
+                <label>Talebe Gezi</label>
+            </value>
+            <value>
+                <fullName>Talebe Mentor Rehberligi</fullName>
+                <default>false</default>
+                <label>Talebe Mentor Rehberligi</label>
+            </value>
+            <value>
+                <fullName>Mentor Houses</fullName>
+                <default>false</default>
+                <label>Mentor Houses</label>
+            </value>
+            <value>
+                <fullName>Collage Mentorship</fullName>
+                <default>false</default>
+                <label>Collage Mentorship</label>
+            </value>
+            <value>
+                <fullName>Mentor Scholarship</fullName>
+                <default>false</default>
+                <label>Mentor Scholarship</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

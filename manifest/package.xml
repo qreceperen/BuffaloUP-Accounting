@@ -29,6 +29,10 @@
         <name>CustomTab</name>
     </types>
     <types>
+        <members>PublicDashboards/OIaymQdPznJYgsmlWCIgtApfzfZram</members>
+        <name>Dashboard</name>
+    </types>
+    <types>
         <members>PublicDashboards</members>
         <name>DashboardFolder</name>
     </types>
@@ -36,10 +40,12 @@
         <members>Account_Record_Page</members>
         <members>BUP_Accounting_UtilityBar</members>
         <members>FlowsApp_UtilityBar</members>
+        <members>Home_Page_Default</members>
         <members>Income_Budget_Record_Page</members>
         <members>Income_Record_Page</members>
         <members>Expense_Budget_Record_Page</members>
         <members>Expense_Record_Page</members>
+        <members>Recurring_Donation_Record_Page</members>
         <name>FlexiPage</name>
     </types>
     <types>
@@ -54,6 +60,7 @@
     <types>
         <members>Account-Account Layout</members>
         <members>Expense_Budget__c-ExpenseBudget Layout</members>
+        <members>Expense__c-Expense Layout</members>
         <members>Income_Budget__c-IncomeBudget Layout</members>
         <members>Income__c-Income Layout</members>
         <members>Recurring_Donation__c-Recurring Donation Layout</members>

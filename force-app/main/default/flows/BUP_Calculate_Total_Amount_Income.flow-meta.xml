@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <assignments>
+        <name>AssignValues</name>
+        <label>AssignValues</label>
+        <locationX>138</locationX>
+        <locationY>647</locationY>
+        <assignmentItems>
+            <assignToReference>TotalAmountReceivedRecurringDonation</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_Recurring_Incomes.Amount__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Recurring_Incomes</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>AssignValues2</name>
+        <label>AssignValues2</label>
+        <locationX>490</locationX>
+        <locationY>647</locationY>
+        <assignmentItems>
+            <assignToReference>TotalAmountReceived</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_Incomes.Amount__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Incomes</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Checks various income types (recurring donation, or other type)</description>
+        <name>Check_Income</name>
+        <label>Check Income</label>
+        <locationX>226</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Get_Related_Incomes</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>NOT Recurring Income</defaultConnectorLabel>
+        <rules>
+            <name>Is_Recurring_Donation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Income_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Recurring Donation</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Recurring_Donation__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Related_Recurring_Incomes</targetReference>
+            </connector>
+            <label>Is Recurring Donation</label>
+        </rules>
+    </decisions>
+    <description>Calculate Total Recurring Donation and Income Budget from Income records.</description>
+    <environments>Default</environments>
+    <interviewLabel>BUP_Calculate Total Amount Income {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>BUP_Calculate Total Amount Income</label>
+    <loops>
+        <name>Loop_Incomes</name>
+        <label>Loop Incomes</label>
+        <locationX>402</locationX>
+        <locationY>539</locationY>
+        <collectionReference>Get_Related_Incomes</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>AssignValues2</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Related_Income_Budget_Record</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <description>Loop All Income Records Received</description>
+        <name>Loop_Recurring_Incomes</name>
+        <label>Loop Recurring Incomes</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <collectionReference>Get_Related_Recurring_Incomes</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>AssignValues</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Recurring_Donation_Record</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get All Related incomes except Recurring Incomes.</description>
+        <name>Get_Related_Incomes</name>
+        <label>Get Related Incomes</label>
+        <locationX>402</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Incomes</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Income_Budget__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Income_Budget__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Income__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get all related income within specific Recurring Donation</description>
+        <name>Get_Related_Recurring_Incomes</name>
+        <label>Get Related Recurring Incomes</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Recurring_Incomes</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Recurring_Donation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Recurring_Donation__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Income__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Recurring_Donation_Record</name>
+        <label>Update Recurring Donation Record</label>
+        <locationX>50</locationX>
+        <locationY>839</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Recurring_Donation__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Total_Amount_Received__c</field>
+            <value>
+                <elementReference>TotalAmountReceivedRecurringDonation</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Recurring_Donation__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates Related income budget object Total Amount Received Field.</description>
+        <name>Update_Related_Income_Budget_Record</name>
+        <label>Update Related Income Budget Record</label>
+        <locationX>402</locationX>
+        <locationY>839</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Income_Budget__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Total_Amount_Received__c</field>
+            <value>
+                <elementReference>TotalAmountReceived</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Income_Budget__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>100</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Income</targetReference>
+        </connector>
+        <object>Income__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Keep Total amount received from all related incomes (except Recurring Incomes)</description>
+        <name>TotalAmountReceived</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+    </variables>
+    <variables>
+        <description>Calculates all received amount related to Recurring Donation</description>
+        <name>TotalAmountReceivedRecurringDonation</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+    </variables>
+</Flow>
