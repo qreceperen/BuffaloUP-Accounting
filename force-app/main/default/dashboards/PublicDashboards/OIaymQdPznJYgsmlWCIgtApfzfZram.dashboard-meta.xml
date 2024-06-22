@@ -206,6 +206,121 @@
             <rowIndex>11</rowIndex>
             <rowSpan>12</rowSpan>
         </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>6</colSpan>
+            <columnIndex>6</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <componentType>RichText</componentType>
+                <dashboardComponentContents>
+                    <richTextContent>[{\&amp;quot;attributes\&amp;quot;:{\&amp;quot;size\&amp;quot;:\&amp;quot;20px\&amp;quot;,\&amp;quot;color\&amp;quot;:\&amp;quot;#e74340\&amp;quot;,\&amp;quot;bold\&amp;quot;:true},\&amp;quot;insert\&amp;quot;:\&amp;quot;HIMMET LISTESI\&amp;quot;},{\&amp;quot;attributes\&amp;quot;:{\&amp;quot;align\&amp;quot;:\&amp;quot;left\&amp;quot;},\&amp;quot;insert\&amp;quot;:\&amp;quot;\\n\&amp;quot;}]</richTextContent>
+                </dashboardComponentContents>
+                <groupingSortProperties/>
+            </dashboardComponent>
+            <rowIndex>23</rowIndex>
+            <rowSpan>2</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>6</colSpan>
+            <columnIndex>6</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <componentType>FlexTable</componentType>
+                <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
+                    <flexTableColumn>
+                        <reportColumn>FK_NAME</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>true</showTotal>
+                        <type>grouping</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>CUST_NAME</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>true</showTotal>
+                        <type>grouping</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>s!Recurring_Donation__c.Promised_Donation_Amount__c</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>true</showTotal>
+                        <type>aggregate</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>s!Recurring_Donation__c.Total_Amount_Received__c</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>true</showTotal>
+                        <type>aggregate</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>s!Recurring_Donation__c.Total_Amount_Left_to_Receive__c</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>true</showTotal>
+                        <type>aggregate</type>
+                    </flexTableColumn>
+                    <flexTableSortInfo>
+                        <sortOrder>1</sortOrder>
+                    </flexTableSortInfo>
+                    <hideChatterPhotos>true</hideChatterPhotos>
+                </flexComponentProperties>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>Recurring Donations Detail</header>
+                <report>unfiled$public/Recurring_Donations_Detail_iIz</report>
+            </dashboardComponent>
+            <rowIndex>25</rowIndex>
+            <rowSpan>8</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>6</colSpan>
+            <columnIndex>6</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Income__c.Amount__c</column>
+                </chartSummary>
+                <componentChartTheme>dark</componentChartTheme>
+                <componentType>BarGrouped</componentType>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>Income__c.Income_Date__c</groupingColumn>
+                <groupingColumn>FK_NAME</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>Recurring Donation Month by Month</header>
+                <legendPosition>Right</legendPosition>
+                <report>unfiled$public/Recurring_Donation_Month_by_Month_W7m</report>
+                <showPercentage>false</showPercentage>
+                <showValues>true</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>33</rowIndex>
+            <rowSpan>12</rowSpan>
+        </dashboardGridComponents>
         <numberOfColumns>12</numberOfColumns>
         <rowHeight>36</rowHeight>
     </dashboardGridLayout>
@@ -213,6 +328,7 @@
     <description>General Appereance of BUP Accounting</description>
     <isGridLayout>true</isGridLayout>
     <owner>test-4xc9jxrxxsna@example.com</owner>
+    <runningUser>test-4xc9jxrxxsna@example.com</runningUser>
     <textColor>#000000</textColor>
     <title>BUP-Dashboard</title>
     <titleColor>#000000</titleColor>

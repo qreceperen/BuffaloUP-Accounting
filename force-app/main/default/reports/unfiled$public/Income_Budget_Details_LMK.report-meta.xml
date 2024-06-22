@@ -21,6 +21,15 @@
         <aggregateTypes>Sum</aggregateTypes>
         <field>Income_Budget__c.Total_Amount_Left_to_Receive__c</field>
     </columns>
+    <filter>
+        <criteriaItems>
+            <column>Income_Budget__c.Fiscal_Year__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,24/25_FY,25/26_FY,26/27_FY</value>
+        </criteriaItems>
+    </filter>
     <format>Tabular</format>
     <name>Income Budget Details</name>
     <params>

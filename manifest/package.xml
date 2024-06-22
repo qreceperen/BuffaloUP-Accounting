@@ -51,6 +51,7 @@
     <types>
         <members>Calculate_Total_Amount_Spent</members>
         <members>BUP_Calculate_Total_Amount_Income</members>
+        <members>BUP_Display_Actual_Money_By_Fiscal_Year</members>
         <name>Flow</name>
     </types>
     <types>
@@ -79,6 +80,7 @@
     </types>
     <types>
         <members>Admin</members>
+        <members>Accountant Standard</members>
         <name>Profile</name>
     </types>
     <types>
