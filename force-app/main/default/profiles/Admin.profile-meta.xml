@@ -201,6 +201,9 @@
         <layout>Expense__c-Expense Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Global-Global Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Income_Budget__c-IncomeBudget Layout</layout>
     </layoutAssignments>
     <layoutAssignments>

@@ -192,6 +192,9 @@
         <readable>false</readable>
     </fieldPermissions>
     <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Expense_Budget__c-ExpenseBudget Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
