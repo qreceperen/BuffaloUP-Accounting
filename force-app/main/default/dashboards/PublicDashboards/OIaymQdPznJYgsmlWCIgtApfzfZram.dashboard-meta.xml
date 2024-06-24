@@ -327,8 +327,6 @@
     <dashboardType>SpecifiedUser</dashboardType>
     <description>General Appereance of BUP Accounting</description>
     <isGridLayout>true</isGridLayout>
-    <owner>test-4xc9jxrxxsna@example.com</owner>
-    <runningUser>test-4xc9jxrxxsna@example.com</runningUser>
     <textColor>#000000</textColor>
     <title>BUP-Dashboard</title>
     <titleColor>#000000</titleColor>
