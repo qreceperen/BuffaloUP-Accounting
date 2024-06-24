@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <description>The category or purpose of the expense (Student Program, Community  Events, Dialog Expenses etc)</description>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rumi - Kira</fullName>
+                <default>false</default>
+                <label>Rumi - Kira</label>
+            </value>
+            <value>
+                <fullName>Dialog Commitee</fullName>
+                <default>false</default>
+                <label>Dialog Commitee</label>
+            </value>
+            <value>
+                <fullName>Business Expenses</fullName>
+                <default>false</default>
+                <label>Business Expenses</label>
+            </value>
+            <value>
+                <fullName>Community Events</fullName>
+                <default>false</default>
+                <label>Community Events</label>
+            </value>
+            <value>
+                <fullName>Mentor Expenses</fullName>
+                <default>false</default>
+                <label>Mentor Expenses</label>
+            </value>
+            <value>
+                <fullName>Rehberlik</fullName>
+                <default>false</default>
+                <label>Rehberlik</label>
+            </value>
+            <value>
+                <fullName>NE Platform odemesi</fullName>
+                <default>false</default>
+                <label>NE Platform odemesi</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

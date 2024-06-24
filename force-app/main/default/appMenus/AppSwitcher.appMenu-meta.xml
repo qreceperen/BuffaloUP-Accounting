@@ -61,11 +61,11 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>standard__Commerce</name>
+        <name>BUP_Accounting</name>
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>BUP_Accounting</name>
+        <name>standard__FlowsApp</name>
         <type>CustomApplication</type>
     </appMenuItems>
 </AppMenu>
