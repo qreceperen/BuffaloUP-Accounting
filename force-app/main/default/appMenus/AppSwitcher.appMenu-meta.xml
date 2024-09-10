@@ -60,12 +60,8 @@
         <name>standard__SalesforceCMS</name>
         <type>CustomApplication</type>
     </appMenuItems>
-    <appMenuItems>
+        <appMenuItems>
         <name>BUP_Accounting</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>standard__FlowsApp</name>
         <type>CustomApplication</type>
     </appMenuItems>
 </AppMenu>

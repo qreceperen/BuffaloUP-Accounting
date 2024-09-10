@@ -25,10 +25,6 @@
         <name>CustomTab</name>
     </types>
     <types>
-        <members>PublicDashboards/OIaymQdPznJYgsmlWCIgtApfzfZram</members>
-        <name>Dashboard</name>
-    </types>
-    <types>
         <members>PublicDashboards</members>
         <name>DashboardFolder</name>
     </types>
@@ -78,15 +74,6 @@
         <members>Admin</members>
         <members>Accountant Standard</members>
         <name>Profile</name>
-    </types>
-    <types>
-        <members>unfiled$public/Expense_Budget_Details_hox</members>
-        <members>unfiled$public/Expense_Transactions_Details_knX</members>
-        <members>unfiled$public/Income_Budget_Details_LMK</members>
-        <members>unfiled$public/Income_Transaction_Details_o79</members>
-        <members>unfiled$public/Recurring_Donations_Detail_iIz</members>
-        <members>unfiled$public/Recurring_Donation_Month_by_Month_W7m</members>
-        <name>Report</name>
     </types>
     <types>
         <members>EnhancedNotes</members>
