@@ -11,7 +11,7 @@
   4. **Total Amount Received** (Currency, Roll-Up Summary): The total amount of income received for the fiscal year.
   5. **Total Amount Left to Receive** (Formula): The remaining amount of income to be received, calculated as Planned Amount - Total Amount Received.
   6. **Description** (Text Area): Additional details or notes about the income budget.
-  7. **Account** (Lookup to Account): The account (donor or organization) associated with this income budget.
+  7. **Donor (Donors)** (Lookup to Account): The donor or organization associated with this income budget.
   8. **Uses Recurring Donations** (Checkbox): Indicates if this income budget involves recurring donations.
 
 **Expense Budget**
@@ -23,14 +23,14 @@
   4. **Total Amount Spent** (Currency, Roll-Up Summary): The total amount of expenses spent for the fiscal year.
   5. **Total Amount Left to Spend** (Formula): The remaining amount of expenses to be spent, calculated as Planned Amount - Total Amount Spent.
   6. **Description** (Text Area): Additional details or notes about the expense budget.
-  7. **Account** (Lookup to Account): The account (vendor or payee) associated with this expense budget.
+  7. **Donor (Donors)** (Lookup to Account): The vendor or payee associated with this expense budget.
 
 **Recurring Donation**
 - **Purpose**: To track individual recurring donations.
 - **Fields**:
-  1. **Donor Name** (Lookup to Account): The account (donor) making the recurring donation.
+  1. **Donor Name** (Lookup to Donor (Donors)): The donor making the recurring donation.
   2. **Promised Amount** (Currency): The total amount promised by the donor for the fiscal year.
-  3. **Donation Date** (Date): The date when the recurring donation was made.
+  3. **Donation Pledge Date** (Date): The date when the donor pledged the donation.
   4. **Fiscal Year** (Picklist): The fiscal year for which the donation is planned.
   5. **Description** (Text Area): Additional details or notes about the recurring donation.
   6. **Income Budget** (Lookup to Income Budget): The income budget category under which this recurring donation falls.
@@ -46,7 +46,7 @@
   4. **Description** (Text Area): Additional details or notes about the income transaction.
   5. **Recurring Donation** (Lookup to Recurring Donation): The recurring donation record associated with this income, if applicable.
   6. **Income Budget** (Lookup to Income Budget): The income budget under which this income transaction falls.
-  7. **Account** (Lookup to Account): The account (donor) from whom the income was received.
+  7. **Donor (Donors)** (Lookup to Donor (Donors)): The donor from whom the income was received.
   8. **Income Type** (Picklist): The type of income transaction (e.g., Recurring Donation, One-time Donation, Grant, Sponsorship).
 
 **Expense**
@@ -57,7 +57,7 @@
   3. **Fiscal Year** (Picklist): The fiscal year for which the expense is recorded.
   4. **Description** (Text Area): Additional details or notes about the expense transaction.
   5. **Expense Budget** (Lookup to Expense Budget): The expense budget under which this expense transaction falls.
-  6. **Account** (Lookup to Account): The account (vendor or payee) to whom the expense was paid.
+  6. **Donor (Donors)** (Lookup to Donor (Donors)): The vendor or payee to whom the expense was paid.
   7. **Expense Type** (Picklist): The type of expense transaction (e.g., Travel, Office Supplies, Advertising, Education Programs).
 
 ### Logic and Flows
@@ -80,6 +80,3 @@
   3. Get Expense Budget records filtered by the selected Fiscal Year.
   4. Loop through records to calculate total amounts.
   5. Display the calculated actual money on the home screen.
-
-### Summary
-This setup ensures accurate tracking and reporting of both income and expenses, including detailed handling of recurring donations. The implemented flows automate the calculation and display of financial data, providing a clear and up-to-date view of the organization's financial status.
