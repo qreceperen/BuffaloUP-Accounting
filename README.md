@@ -87,7 +87,8 @@
 
 NOTLAR:
 1. Recurring Donation lar kisinin verdigi himmet sozudur. (Mostly)
-2. 
+2. Her Income ve Expensin bir budget i olmalidir
+3. 
 
 
 
@@ -96,4 +97,10 @@ NOTLAR:
 PROBLEMS
 1. When an Income made there is a flow updated total amount received. Lets say person A made 100, 50, 25 recurring amount. Total amount received = 175. But when we delete one of the record
 Total amount received stays as 175. Because flow triggers when create or update happens. When we update any income trigger works and total amount received = 150. But we need to find a way when any income is deleted make auto calculation.
+2. 
+
+
+STORIES
+1. Carry over kismi eklemeliyiz (simdilik manuel olabilir). Kisinin kalan miktarini carry over olarak yeni yila yazariz. Ama Balance sifirlanmali carry over dan sonra (yada oyle birakilip sorarsa
+gosterilmeli bir not ile beraber)
 2. 
