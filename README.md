@@ -80,3 +80,20 @@
   3. Get Expense Budget records filtered by the selected Fiscal Year.
   4. Loop through records to calculate total amounts.
   5. Display the calculated actual money on the home screen.
+
+
+
+
+
+NOTLAR:
+1. Recurring Donation lar kisinin verdigi himmet sozudur. (Mostly)
+2. 
+
+
+
+
+
+PROBLEMS
+1. When an Income made there is a flow updated total amount received. Lets say person A made 100, 50, 25 recurring amount. Total amount received = 175. But when we delete one of the record
+Total amount received stays as 175. Because flow triggers when create or update happens. When we update any income trigger works and total amount received = 150. But we need to find a way when any income is deleted make auto calculation.
+2. 
