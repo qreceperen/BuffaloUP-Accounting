@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Income_Budget__c</fullName>
-    <deleteConstraint>SetNull</deleteConstraint>
-    <externalId>false</externalId>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>The income budget category under which this recurring donation falls.</description>
+    <inlineHelpText>Each Income has to have Income budget (Bu Yapilan harcama icin kategori olarak dusunulebilir. Her Harcamanin kategorisi olmalidir)</inlineHelpText>
     <label>Income Budget</label>
     <referenceTo>Income_Budget__c</referenceTo>
     <relationshipLabel>Recurring Donations</relationshipLabel>
     <relationshipName>Recurring_Donations</relationshipName>
-    <required>false</required>
+    <required>true</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Lookup</type>
