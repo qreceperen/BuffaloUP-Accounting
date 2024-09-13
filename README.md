@@ -63,7 +63,10 @@
 ### Logic and Flows
 
 #### Flow: BUP_Calculate Total Amount Spent
-- **Purpose**: Automatically calculates and updates the `Total Amount Spent` in the `Expense Budget` object based on related `Expense` records.
+- **Purpose**: Automatically calculates and updates the `Total Amount Spent` in the `Expense Budget` object based on related `Expense` records. When a new Income record created or updated.
+
+#### Flow: BUP_Calculate_Total_Amount_Income_When_Deleted
+- **Purpose**: Automatically calculates and updates the `Total Amount Spent` in the `Expense Budget` object based on related `Expense` records. When an Income record is deleted.
 
 #### Flow: BUP_Calculate Total Amount Income
 - **Purpose**: Automatically calculates and updates the `Total Amount Received` in the `Income Budget` object by considering both normal income and recurring donations.
@@ -103,4 +106,3 @@ Total amount received stays as 175. Because flow triggers when create or update 
 STORIES
 1. Carry over kismi eklemeliyiz (simdilik manuel olabilir). Kisinin kalan miktarini carry over olarak yeni yila yazariz. Ama Balance sifirlanmali carry over dan sonra (yada oyle birakilip sorarsa
 gosterilmeli bir not ile beraber)
-2. 
