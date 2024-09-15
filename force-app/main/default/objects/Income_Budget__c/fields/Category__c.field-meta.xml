@@ -13,19 +13,29 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Facebook</fullName>
+                <fullName>Donations</fullName>
                 <default>false</default>
-                <label>Facebook</label>
+                <label>Donations</label>
             </value>
             <value>
-                <fullName>Other</fullName>
+                <fullName>Fairs</fullName>
                 <default>false</default>
-                <label>Other</label>
+                <label>Fairs</label>
             </value>
             <value>
-                <fullName>Sadaka</fullName>
+                <fullName>Sadaka Fitre</fullName>
                 <default>false</default>
-                <label>Sadaka</label>
+                <label>Sadaka Fitre</label>
+            </value>
+            <value>
+                <fullName>Matchings</fullName>
+                <default>false</default>
+                <label>Matchings</label>
+            </value>
+            <value>
+                <fullName>Weekend School</fullName>
+                <default>false</default>
+                <label>Weekend School</label>
             </value>
             <value>
                 <fullName>Youth Program</fullName>
@@ -33,9 +43,9 @@
                 <label>Youth Program</label>
             </value>
             <value>
-                <fullName>Recurring Donation (Himmet)</fullName>
+                <fullName>Other</fullName>
                 <default>false</default>
-                <label>Recurring Donation (Himmet)</label>
+                <label>Other</label>
             </value>
         </valueSetDefinition>
     </valueSet>

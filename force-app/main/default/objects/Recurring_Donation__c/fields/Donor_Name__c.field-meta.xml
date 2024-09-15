@@ -3,6 +3,7 @@
     <fullName>Donor_Name__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <description>The account (donor) making the recurring donation.</description>
+    <externalId>false</externalId>
     <label>Donor Name</label>
     <referenceTo>Account</referenceTo>
     <relationshipLabel>Recurring Donations</relationshipLabel>

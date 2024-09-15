@@ -3,6 +3,7 @@
     <fullName>Income_Budget__c</fullName>
     <deleteConstraint>Restrict</deleteConstraint>
     <description>The income budget category under which this recurring donation falls.</description>
+    <externalId>false</externalId>
     <inlineHelpText>Each Income has to have Income budget (Bu Yapilan harcama icin kategori olarak dusunulebilir. Her Harcamanin kategorisi olmalidir)</inlineHelpText>
     <label>Income Budget</label>
     <referenceTo>Income_Budget__c</referenceTo>
