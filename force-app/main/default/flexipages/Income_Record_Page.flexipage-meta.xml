@@ -150,6 +150,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Donor_Name__c</fieldItem>
                 <identifier>RecordAccount_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Income_Type__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Recurring Donation</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-49e63bf1-0e07-4ddc-852a-2d99caa52828</name>

@@ -112,3 +112,5 @@ gosterilmeli bir not ile beraber)
    - Donation icin ayri
    - Normal gelirler icin ayri  
    - Yada hep beraber deneyip gormek lazim
+
+4. Expense ler hangi comminite tarafindan yapildi bunu belirleyecek bir picklist lazim
