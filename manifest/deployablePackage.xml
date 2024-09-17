@@ -81,6 +81,11 @@
         <name>Profile</name>
     </types>
     <types>
+        <members>unfiled$public/Each_Month_Recurring_Donation_Table_igz</members>
+        <members>unfiled$public/Recurring_Donation_Ozet_jSW</members>
+        <name>Report</name>
+    </types>
+    <types>
         <members>EnhancedNotes</members>
         <name>Settings</name>
     </types>
