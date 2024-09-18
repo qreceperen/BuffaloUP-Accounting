@@ -118,13 +118,18 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Income_Transaction__c.Donor_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Income_Transaction__c.Fiscal_Year__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Income_Transaction__c.Income_Budget__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -164,11 +169,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Recurring_Donation__c.Fiscal_Year__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Recurring_Donation__c.Income_Budget__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
