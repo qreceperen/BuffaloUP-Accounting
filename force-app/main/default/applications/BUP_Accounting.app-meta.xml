@@ -25,7 +25,7 @@
         <formFactor>Small</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
-        <pageOrSobjectType>Expense__c</pageOrSobjectType>
+        <pageOrSobjectType>Expense_Transaction__c</pageOrSobjectType>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
@@ -34,7 +34,7 @@
         <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
-        <pageOrSobjectType>Expense__c</pageOrSobjectType>
+        <pageOrSobjectType>Expense_Transaction__c</pageOrSobjectType>
     </actionOverrides>
     <actionOverrides>
         <actionName>Tab</actionName>
@@ -51,7 +51,7 @@
         <formFactor>Small</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
-        <pageOrSobjectType>Income__c</pageOrSobjectType>
+        <pageOrSobjectType>Income_Transaction__c</pageOrSobjectType>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
@@ -60,7 +60,7 @@
         <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
-        <pageOrSobjectType>Income__c</pageOrSobjectType>
+        <pageOrSobjectType>Income_Transaction__c</pageOrSobjectType>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
@@ -114,8 +114,8 @@
     <tabs>standard-Account</tabs>
     <tabs>Income_Budget__c</tabs>
     <tabs>Expense_Budget__c</tabs>
-    <tabs>Income__c</tabs>
-    <tabs>Expense__c</tabs>
+    <tabs>Income_Transaction__c</tabs>
+    <tabs>Expense_Transaction__c</tabs>
     <tabs>Recurring_Donation__c</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>

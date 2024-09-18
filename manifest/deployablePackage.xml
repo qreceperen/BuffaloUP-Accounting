@@ -57,16 +57,16 @@
     <types>
         <members>Account-Account Layout</members>
         <members>Expense_Budget__c-ExpenseBudget Layout</members>
-        <members>Expense__c-Expense Layout</members>
+        <members>Expense_Transaction__c-Expense Layout</members>
         <members>Income_Budget__c-IncomeBudget Layout</members>
-        <members>Income__c-Income Layout</members>
+        <members>Income_Transaction__c-Income Layout</members>
         <members>Recurring_Donation__c-Recurring Donation Layout</members>
         <name>Layout</name>
     </types>
     <types>
-        <members>Expense__c.All</members>
+        <members>Expense_Transaction__c.All</members>
         <members>Expense_Budget__c.All</members>
-        <members>Income__c.All</members>
+        <members>Income_Transaction__c.All</members>
         <members>Income_Budget__c.All</members>
         <name>ListView</name>
     </types>

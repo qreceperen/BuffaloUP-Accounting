@@ -40,7 +40,7 @@
         <displayField xsi:nil="true"/>
         <object xsi:nil="true"/>
         <picklistField>Fiscal_Year__c</picklistField>
-        <picklistObject>Income__c</picklistObject>
+        <picklistObject>Income_Transaction__c</picklistObject>
     </dynamicChoiceSets>
     <environments>Default</environments>
     <formulas>
@@ -202,7 +202,7 @@
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
-        <objectType>Income__c</objectType>
+        <objectType>Income_Transaction__c</objectType>
     </variables>
     <variables>
         <name>varTotalAmountReceivedIncomeBudgets</name>

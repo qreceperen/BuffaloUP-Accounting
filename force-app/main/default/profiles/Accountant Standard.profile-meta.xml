@@ -43,37 +43,37 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Expense__c.Account__c</field>
+        <field>Expense_Transaction__c.Account__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Expense__c.Amount__c</field>
+        <field>Expense_Transaction__c.Amount__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Expense__c.Description__c</field>
+        <field>Expense_Transaction__c.Description__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Expense__c.Expense_Date__c</field>
+        <field>Expense_Transaction__c.Expense_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Expense__c.Expense_Type__c</field>
+        <field>Expense_Transaction__c.Expense_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Expense__c.Fiscal_Year__c</field>
+        <field>Expense_Transaction__c.Fiscal_Year__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Expense__c.Payment_Type__c</field>
+        <field>Expense_Transaction__c.Payment_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -108,47 +108,47 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Income__c.Account__c</field>
+        <field>Income_Transaction__c.Account__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Income__c.Amount__c</field>
+        <field>Income_Transaction__c.Amount__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Income__c.Description__c</field>
+        <field>Income_Transaction__c.Description__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Income__c.Fiscal_Year__c</field>
+        <field>Income_Transaction__c.Fiscal_Year__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Income__c.Income_Budget__c</field>
+        <field>Income_Transaction__c.Income_Budget__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Income__c.Income_Date__c</field>
+        <field>Income_Transaction__c.Income_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Income__c.Income_Type__c</field>
+        <field>Income_Transaction__c.Income_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Income__c.Payment_Type__c</field>
+        <field>Income_Transaction__c.Payment_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Income__c.Recurring_Donation__c</field>
+        <field>Income_Transaction__c.Recurring_Donation__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -198,13 +198,13 @@
         <layout>Expense_Budget__c-ExpenseBudget Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Expense__c-Expense Layout</layout>
+        <layout>Expense_Transaction__c-Expense Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Income_Budget__c-IncomeBudget Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Income__c-Income Layout</layout>
+        <layout>Income_Transaction__c-Income Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Recurring_Donation__c-Recurring Donation Layout</layout>
@@ -214,7 +214,7 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Expense__c</tab>
+        <tab>Expense_Transaction__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -222,7 +222,7 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Income__c</tab>
+        <tab>Income_Transaction__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
