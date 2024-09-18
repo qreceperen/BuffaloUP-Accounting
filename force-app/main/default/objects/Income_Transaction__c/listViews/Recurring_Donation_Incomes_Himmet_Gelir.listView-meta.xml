@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recurring_Donation_Incomes_Himmet_Gelir</fullName>
+    <columns>NAME</columns>
+    <columns>Donor_Name__c</columns>
+    <columns>Recurring_Donation__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Income_Date__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Income_Type__c</field>
+        <operation>equals</operation>
+        <value>Recurring Donation</value>
+    </filters>
+    <label>Recurring Donation Incomes (Himmet Gelir</label>
+</ListView>

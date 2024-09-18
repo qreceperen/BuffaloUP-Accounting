@@ -37,7 +37,7 @@
   7. **Total Amount Paid** (Currency): The total amount paid by the donor.
   8. **Total Amount Left** (Formula): The remaining amount left to be paid by the donor, calculated as Promised Amount - Total Amount Paid.
 
-**Income**
+**Income Transactions**
 - **Purpose**: To record individual income transactions.
 - **Fields**:
   1. **Amount** (Currency): The amount of income received.
@@ -49,7 +49,7 @@
   7. **Donor (Donors)** (Lookup to Donor (Donors)): The donor from whom the income was received.
   8. **Income Type** (Picklist): The type of income transaction (e.g., Recurring Donation, One-time Donation, Grant, Sponsorship).
 
-**Expense**
+**Expense Transactions**
 - **Purpose**: To record individual expense transactions.
 - **Fields**:
   1. **Amount** (Currency): The amount of expense incurred.

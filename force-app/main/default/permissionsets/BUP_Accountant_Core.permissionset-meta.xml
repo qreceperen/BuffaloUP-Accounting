@@ -86,37 +86,37 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Expense__c.Account__c</field>
+        <field>Expense_Transaction__c.Account__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Expense__c.Amount__c</field>
+        <field>Expense_Transaction__c.Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Expense__c.Description__c</field>
+        <field>Expense_Transaction__c.Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Expense__c.Expense_Date__c</field>
+        <field>Expense_Transaction__c.Expense_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Expense__c.Expense_Type__c</field>
+        <field>Expense_Transaction__c.Expense_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Expense__c.Fiscal_Year__c</field>
+        <field>Expense_Transaction__c.Fiscal_Year__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Expense__c.Payment_Type__c</field>
+        <field>Expense_Transaction__c.Payment_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -146,42 +146,47 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Income__c.Amount__c</field>
+        <field>Income_Transaction__c.Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Income__c.Description__c</field>
+        <field>Income_Transaction__c.Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Income__c.Fiscal_Year__c</field>
+        <field>Income_Transaction__c.Donor_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Income__c.Income_Budget__c</field>
+        <field>Income_Transaction__c.Fiscal_Year__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Income__c.Income_Date__c</field>
+        <field>Income_Transaction__c.Income_Budget__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Income__c.Income_Type__c</field>
+        <field>Income_Transaction__c.Income_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Income__c.Payment_Type__c</field>
+        <field>Income_Transaction__c.Income_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Income__c.Recurring_Donation__c</field>
+        <field>Income_Transaction__c.Payment_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Income_Transaction__c.Recurring_Donation__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -191,7 +196,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Recurring_Donation__c.Donation_Date__c</field>
+        <field>Recurring_Donation__c.Donation_Pledge_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -271,7 +276,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Expense__c</object>
+        <object>Expense_Transaction__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -289,7 +294,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Income__c</object>
+        <object>Income_Transaction__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -306,7 +311,7 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>Expense__c</tab>
+        <tab>Expense_Transaction__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
@@ -314,7 +319,7 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>Income__c</tab>
+        <tab>Income_Transaction__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>

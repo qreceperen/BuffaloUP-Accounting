@@ -154,14 +154,14 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Income</label>
+    <label>Income Transaction</label>
     <nameField>
         <displayFormat>IN-{000000}</displayFormat>
         <label>Income Number</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Incomes</pluralLabel>
+    <pluralLabel>Income Transactions</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <startsWith>Vowel</startsWith>

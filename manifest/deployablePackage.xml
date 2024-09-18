@@ -13,10 +13,10 @@
         <name>CustomField</name>
     </types>
     <types>
-        <members>Expense__c</members>
         <members>Expense_Budget__c</members>
-        <members>Income__c</members>
+        <members>Expense_Transaction__c</members>
         <members>Income_Budget__c</members>
+        <members>Income_Transaction__c</members>
         <members>Recurring_Donation__c</members>
         <name>CustomObject</name>
     </types>
@@ -83,6 +83,7 @@
     <types>
         <members>unfiled$public/Each_Month_Recurring_Donation_Table_igz</members>
         <members>unfiled$public/Recurring_Donation_Ozet_jSW</members>
+        <members>unfiled$public/Total_Income_5gZ</members>
         <name>Report</name>
     </types>
     <types>

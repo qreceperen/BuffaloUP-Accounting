@@ -5,7 +5,6 @@
     <description>The recurring donation record associated with this income, if applicable.</description>
     <label>Recurring Donation</label>
     <referenceTo>Recurring_Donation__c</referenceTo>
-    <relationshipLabel>Incomes</relationshipLabel>
     <relationshipName>Incomes</relationshipName>
     <required>false</required>
     <trackHistory>false</trackHistory>

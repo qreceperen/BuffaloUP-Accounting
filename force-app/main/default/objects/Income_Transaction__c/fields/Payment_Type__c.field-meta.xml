@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Income_Type__c</fullName>
-    <label>Income Type</label>
+    <fullName>Payment_Type__c</fullName>
+    <label>Payment Type</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
@@ -11,29 +11,24 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>One - Time Donation</fullName>
+                <fullName>Cash</fullName>
                 <default>false</default>
-                <label>One - Time Donation</label>
+                <label>Cash</label>
             </value>
             <value>
-                <fullName>Recurring Donation</fullName>
+                <fullName>Check</fullName>
                 <default>false</default>
-                <label>Recurring Donation</label>
+                <label>Check</label>
             </value>
             <value>
-                <fullName>Grant</fullName>
+                <fullName>Paypal</fullName>
                 <default>false</default>
-                <label>Grant</label>
+                <label>Paypal</label>
             </value>
             <value>
-                <fullName>Youth Program</fullName>
+                <fullName>Zelle</fullName>
                 <default>false</default>
-                <label>Youth Program</label>
-            </value>
-            <value>
-                <fullName>Others</fullName>
-                <default>false</default>
-                <label>Others</label>
+                <label>Zelle</label>
             </value>
         </valueSetDefinition>
     </valueSet>
