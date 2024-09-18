@@ -114,3 +114,8 @@ gosterilmeli bir not ile beraber)
    - Yada hep beraber deneyip gormek lazim
 
 4. Expense ler hangi comminite tarafindan yapildi bunu belirleyecek bir picklist lazim
+Income Budget Category addition 
+  - Recurring Donation (Himmet)
+  - One time Donation
+  Income Budget record page visibility kurallarida ona gore sekillenmeli. Yani Type recurring is related tab da recurring donation gozukmeli, 
+  type one-time Donations is Donationlar gozukmeli.

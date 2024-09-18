@@ -122,13 +122,6 @@
                 </componentInstanceProperties>
                 <componentName>lst:dynamicRelatedList</componentName>
                 <identifier>lst_dynamicRelatedList</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Category__c}</leftValue>
-                        <operator>NE</operator>
-                        <rightValue>Recurring Donation (Himmet)</rightValue>
-                    </criteria>
-                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -195,13 +188,6 @@
                 </componentInstanceProperties>
                 <componentName>lst:dynamicRelatedList</componentName>
                 <identifier>lst_dynamicRelatedList2</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Category__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>Recurring Donation (Himmet)</rightValue>
-                    </criteria>
-                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
