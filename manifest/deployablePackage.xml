@@ -25,10 +25,10 @@
         <name>CustomObjectTranslation</name>
     </types>
     <types>
-        <members>Expense__c</members>
         <members>Expense_Budget__c</members>
-        <members>Income__c</members>
+        <members>Expense_Transaction__c</members>
         <members>Income_Budget__c</members>
+        <members>Income_Transaction__c</members>
         <members>Recurring_Donation__c</members>
         <name>CustomTab</name>
     </types>
@@ -48,7 +48,6 @@
         <members>Calculate_Total_Amount_Spent</members>
         <members>BUP_Calculate_Total_Amount_Income</members>
         <members>BUP_Calculate_Total_Amount_Income_When_Deleted</members>
-        <members>BUP_Display_Actual_Money_By_Fiscal_Year</members>
         <name>Flow</name>
     </types>
     <types>

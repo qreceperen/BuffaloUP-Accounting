@@ -191,7 +191,7 @@
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>Income__c</object>
+        <object>Income_Transaction__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
@@ -213,7 +213,7 @@
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>Income__c</object>
+        <object>Income_Transaction__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
@@ -290,7 +290,7 @@
         <connector>
             <targetReference>Check_Income</targetReference>
         </connector>
-        <object>Income__c</object>
+        <object>Income_Transaction__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>

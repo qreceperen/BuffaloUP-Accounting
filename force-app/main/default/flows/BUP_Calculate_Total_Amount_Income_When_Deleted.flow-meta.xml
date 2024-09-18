@@ -199,7 +199,7 @@
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>Income__c</object>
+        <object>Income_Transaction__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
@@ -228,7 +228,7 @@
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>Income__c</object>
+        <object>Income_Transaction__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
@@ -305,11 +305,11 @@
         <connector>
             <targetReference>Check_Income</targetReference>
         </connector>
-        <object>Income__c</object>
+        <object>Income_Transaction__c</object>
         <recordTriggerType>Delete</recordTriggerType>
         <triggerType>RecordBeforeDelete</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <description>Keep Total amount received from all related incomes (except Recurring Incomes)</description>
         <name>TotalAmountReceived</name>

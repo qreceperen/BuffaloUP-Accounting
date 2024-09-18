@@ -72,7 +72,7 @@
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>Expense__c</object>
+        <object>Expense_Transaction__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
@@ -102,7 +102,7 @@
         <connector>
             <targetReference>get_All_Related_Expenses</targetReference>
         </connector>
-        <object>Expense__c</object>
+        <object>Expense_Transaction__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
