@@ -91,7 +91,7 @@
                             <value>NAME</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Account__c</value>
+                            <value>Donor_Name__c</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Amount__c</value>

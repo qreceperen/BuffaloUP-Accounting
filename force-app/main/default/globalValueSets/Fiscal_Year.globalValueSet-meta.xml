@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <customValue>
+        <fullName>23/24_FY</fullName>
+        <default>true</default>
+        <label>23/24 FY</label>
+    </customValue>
+    <customValue>
         <fullName>24/25_FY</fullName>
         <default>false</default>
         <label>24/25 FY</label>

@@ -151,7 +151,7 @@
                             <value>NAME</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Donation_Date__c</value>
+                            <value>Donation_Pledge_Date__c</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Fiscal_Year__c</value>

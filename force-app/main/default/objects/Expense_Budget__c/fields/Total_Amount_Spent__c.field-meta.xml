@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Total_Amount_Spent__c</fullName>
     <description>The total amount of expenses spent for the fiscal year.</description>
-    <externalId>false</externalId>
     <label>Total Amount Spent</label>
     <precision>18</precision>
     <required>false</required>

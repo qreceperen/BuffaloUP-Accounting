@@ -173,7 +173,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Donation_Date__c</fieldItem>
+                <fieldItem>Record.Donation_Pledge_Date__c</fieldItem>
                 <identifier>RecordDonation_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>

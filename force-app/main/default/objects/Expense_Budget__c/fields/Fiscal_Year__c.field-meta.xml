@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Fiscal_Year__c</fullName>
     <description>The fiscal year for which the budget is planned (e.g 23/24 FY)</description>
-    <externalId>false</externalId>
     <inlineHelpText>Buffalo Up fiscal year starts from July to June like 23/24 FY means 1 July 2023 to 30 June 2024</inlineHelpText>
     <label>Fiscal Year</label>
     <required>false</required>
