@@ -75,6 +75,16 @@
                 <default>false</default>
                 <label>Mentor Scholarship</label>
             </value>
+            <value>
+                <fullName>Weekend School</fullName>
+                <default>false</default>
+                <label>Weekend School</label>
+            </value>
+            <value>
+                <fullName>Rent</fullName>
+                <default>false</default>
+                <label>Rent</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
