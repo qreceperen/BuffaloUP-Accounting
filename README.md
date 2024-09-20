@@ -121,5 +121,5 @@ Income Budget Category addition
   type one-time Donations is Donationlar gozukmeli.
 
 5. Expense Transaction Object Edits
-  - Payment Type i kaldir
+  - Payment Type i kaldir (NOTE)
   
