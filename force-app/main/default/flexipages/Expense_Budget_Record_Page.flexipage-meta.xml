@@ -95,9 +95,6 @@
                             <value>Expense_Type__c</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Payment_Type__c</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>Fiscal_Year__c</value>
                         </valueListItems>
                     </valueList>

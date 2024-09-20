@@ -119,3 +119,7 @@ Income Budget Category addition
   - One time Donation
   Income Budget record page visibility kurallarida ona gore sekillenmeli. Yani Type recurring is related tab da recurring donation gozukmeli, 
   type one-time Donations is Donationlar gozukmeli.
+
+5. Expense Transaction Object Edits
+  - Payment Type i kaldir
+  
