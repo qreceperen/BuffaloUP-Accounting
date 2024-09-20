@@ -156,7 +156,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Expense Budget</label>
     <nameField>
-        <label>ExpenseBudget Name</label>
+        <label>Expense Budget Name</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
