@@ -3,6 +3,7 @@
     <fullName>Account__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <description>The account (vendor or payee) to whom the expense was paid.</description>
+    <externalId>false</externalId>
     <label>Account</label>
     <referenceTo>Account</referenceTo>
     <relationshipName>Expenses</relationshipName>

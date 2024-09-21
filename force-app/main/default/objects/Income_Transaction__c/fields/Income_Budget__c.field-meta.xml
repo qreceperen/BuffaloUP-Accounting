@@ -3,6 +3,7 @@
     <fullName>Income_Budget__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <description>The income budget under which this income transaction falls.</description>
+    <externalId>false</externalId>
     <label>Income Budget</label>
     <referenceTo>Income_Budget__c</referenceTo>
     <relationshipName>Incomes</relationshipName>

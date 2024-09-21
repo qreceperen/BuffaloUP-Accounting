@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Donation_Pledge_Date__c</fullName>
     <description>The date when the donor pledged the donation.</description>
+    <externalId>false</externalId>
     <inlineHelpText>Himmet sozunun alindigi gun.</inlineHelpText>
     <label>Donation Pledge Date</label>
     <required>false</required>

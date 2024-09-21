@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Total_Amount_Left_to_Spend__c</fullName>
     <description>The remaining amount of expenses to be spent, calculated as Planned Amount - Total Amount Spent.</description>
+    <externalId>false</externalId>
     <formula>Planned_Amount__c -  Total_Amount_Spent__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Total Amount Left to Spend</label>

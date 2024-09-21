@@ -3,6 +3,7 @@
     <fullName>Recurring_Donation__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <description>The recurring donation record associated with this income, if applicable.</description>
+    <externalId>false</externalId>
     <label>Recurring Donation</label>
     <referenceTo>Recurring_Donation__c</referenceTo>
     <relationshipName>Incomes</relationshipName>

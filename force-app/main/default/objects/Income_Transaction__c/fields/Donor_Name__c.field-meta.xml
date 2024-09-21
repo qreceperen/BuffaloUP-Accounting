@@ -3,6 +3,7 @@
     <fullName>Donor_Name__c</fullName>
     <deleteConstraint>Restrict</deleteConstraint>
     <description>The account (donor) from whom the income was received.</description>
+    <externalId>false</externalId>
     <label>Donor Name</label>
     <referenceTo>Account</referenceTo>
     <relationshipName>Incomes</relationshipName>

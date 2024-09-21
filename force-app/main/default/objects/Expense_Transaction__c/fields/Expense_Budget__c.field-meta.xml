@@ -3,6 +3,7 @@
     <fullName>Expense_Budget__c</fullName>
     <deleteConstraint>Restrict</deleteConstraint>
     <description>The expense budget under which this expense transaction falls.</description>
+    <externalId>false</externalId>
     <label>Expense Budget</label>
     <referenceTo>Expense_Budget__c</referenceTo>
     <relationshipName>Expenses</relationshipName>
