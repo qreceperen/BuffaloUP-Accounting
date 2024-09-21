@@ -29,19 +29,11 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>standard__Sites</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
         <name>standard__Chatter</name>
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
         <name>standard__Content</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>standard__LightningSales</name>
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
@@ -60,7 +52,7 @@
         <name>standard__SalesforceCMS</name>
         <type>CustomApplication</type>
     </appMenuItems>
-        <appMenuItems>
+    <appMenuItems>
         <name>BUP_Accounting</name>
         <type>CustomApplication</type>
     </appMenuItems>
