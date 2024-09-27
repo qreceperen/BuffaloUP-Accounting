@@ -10,7 +10,7 @@
   ],
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "59.0",
+  "sourceApiVersion": "61.0",
   "packageAliases": {
     "BuffaloUpAccounting": "0HoPo0000000i13KAA"
   }
