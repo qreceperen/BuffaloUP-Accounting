@@ -1,18 +1,17 @@
 {
   "packageDirectories": [
     {
-      "path": "force-app",
-      "default": true,
-      "package": "BUP-Accounting",
       "versionName": "ver 0.1",
       "versionNumber": "0.1.0.NEXT",
-      "versionDescription": "My Package"
+      "path": "force-app",
+      "package": "BuffaloUpAccounting",
+      "versionDescription": "BUP Accounting Package"
     }
   ],
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "59.0",
   "packageAliases": {
-    "BUP-Accounting": "0Ho8b0000010wHYCAY"
+    "BuffaloUpAccounting": "0HoPo0000000i13KAA"
   }
 }
