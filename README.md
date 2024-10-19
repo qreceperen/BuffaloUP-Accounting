@@ -122,4 +122,13 @@ Income Budget Category addition
 
 5. Expense Transaction Object Edits
   - Payment Type i kaldir
+
+6. Recurring Donation Pledge Amounts otomatik toplanip ilgili recurring Donation kaydi altinda Toplam olarak gozukmeli.
+
+7. !!!! Expense Budget ta Related Expense transactionlar gorulmuyor
+8. Expense budget,  Income Budget, Recurring Donation Active yada pasif hale getirilebilmeli. Dolayisi ile carry over lar hesaplamaya katilmamali
+
+
+
+
   
