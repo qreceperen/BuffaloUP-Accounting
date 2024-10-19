@@ -12,6 +12,7 @@
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "61.0",
   "packageAliases": {
-    "BuffaloUpAccounting": "0HoPo0000000i13KAA"
+    "BuffaloUpAccounting": "0HoPo0000000i13KAA",
+    "BuffaloUpAccounting@0.1.0-1": "04tPo0000007r4PIAQ"
   }
 }
