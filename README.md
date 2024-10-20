@@ -125,8 +125,7 @@ Income Budget Category addition
 
 6. Recurring Donation Pledge Amounts otomatik toplanip ilgili recurring Donation kaydi altinda Toplam olarak gozukmeli.
 
-7. !!!! Expense Budget ta Related Expense transactionlar gorulmuyor
-8. Expense budget,  Income Budget, Recurring Donation Active yada pasif hale getirilebilmeli. Dolayisi ile carry over lar hesaplamaya katilmamali
+7. Expense budget,  Income Budget, Recurring Donation Active yada pasif hale getirilebilmeli. Dolayisi ile carry over lar hesaplamaya katilmamali
 
 
 
