@@ -1,0 +1,26 @@
+[
+    {
+        "sobject": "Income_Budget__c",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "Income_Budget__c.json"
+        ]
+    },
+    {
+        "sobject": "Recurring_Donation__c",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "Recurring_Donation__c.json"
+        ]
+    },
+    {
+        "sobject": "Income_Transaction__c",
+        "saveRefs": false,
+        "resolveRefs": true,
+        "files": [
+            "Income_Transaction__c.json"
+        ]
+    }
+]

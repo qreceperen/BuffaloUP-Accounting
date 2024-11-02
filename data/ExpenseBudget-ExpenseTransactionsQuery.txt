@@ -1,0 +1,4 @@
+Select Name,  Category__c, Description__c, Fiscal_Year__c, Planned_Amount__c, Total_Amount_Spent__c,
+(Select Amount__c, Description__c, Expense_Budget__c, Expense_Date__c, Expense_Type__c, Fiscal_Year__c FROM Expenses__r)
+
+FROM Expense_Budget__c 

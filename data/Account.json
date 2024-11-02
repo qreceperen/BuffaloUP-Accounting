@@ -1,0 +1,298 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef1"
+            },
+            "Name": "Yunus Kumek"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef2"
+            },
+            "Name": "Fehmi Damgaci"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef3"
+            },
+            "Name": "Mediha Oktem"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef4"
+            },
+            "Name": "Merve Atabay"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef5"
+            },
+            "Name": "Sertac Akarsu"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef6"
+            },
+            "Name": "Mucahit Polat"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef7"
+            },
+            "Name": "Ismail Koseoglu"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef8"
+            },
+            "Name": "Mustafa Kekec"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef9"
+            },
+            "Name": "Murat Kucukdugenci"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef10"
+            },
+            "Name": "Yavuz Gebes"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef11"
+            },
+            "Name": "Hasan Ozkan"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef12"
+            },
+            "Name": "Fatih Gul"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef13"
+            },
+            "Name": "Mustafa Gokcek"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef14"
+            },
+            "Name": "Murat Tutumlu"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef15"
+            },
+            "Name": "Ragip Baylar"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef16"
+            },
+            "Name": "Ibrahim Duyan"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef17"
+            },
+            "Name": "Hasan Kumek"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef18"
+            },
+            "Name": "Mehmet Kaya"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef19"
+            },
+            "Name": "Abdulkadir Zakin"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef20"
+            },
+            "Name": "Mustafa Kaya"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef21"
+            },
+            "Name": "Giray Gebes"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef22"
+            },
+            "Name": "Ozlem Tuncer"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef23"
+            },
+            "Name": "Mustafa Cetinkaya"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef24"
+            },
+            "Name": "Recep Eren"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef25"
+            },
+            "Name": "Yunus Esencayi"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef26"
+            },
+            "Name": "Erdem Tuncer"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef27"
+            },
+            "Name": "Hakan Aktar"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef28"
+            },
+            "Name": "Facebook"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef29"
+            },
+            "Name": "North Platform"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef30"
+            },
+            "Name": "Mine Varol"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef31"
+            },
+            "Name": "Muhammed Kanik"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef32"
+            },
+            "Name": "Burak Yuzuguldu"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef33"
+            },
+            "Name": "Talha Donmez"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef34"
+            },
+            "Name": "Osman Varol"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef35"
+            },
+            "Name": "Burak Kumek"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef36"
+            },
+            "Name": "Hamide Uzun"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef37"
+            },
+            "Name": "SIDDIK Abi (Soy adi sor)"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef38"
+            },
+            "Name": "Faruk Oktem"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef39"
+            },
+            "Name": "Buffalo United Peace (BUP)"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef40"
+            },
+            "Name": "Onur Gavasever"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef41"
+            },
+            "Name": "Maida Omar"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef42"
+            },
+            "Name": "Gul Kullu"
+        }
+    ]
+}

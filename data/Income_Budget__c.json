@@ -1,0 +1,39 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Income_Budget__c",
+                "referenceId": "Income_Budget__cRef1"
+            },
+            "Name": "24/25 - Recurring Donations (Himmet)"
+        },
+        {
+            "attributes": {
+                "type": "Income_Budget__c",
+                "referenceId": "Income_Budget__cRef2"
+            },
+            "Name": "24/25 - OTHER"
+        },
+        {
+            "attributes": {
+                "type": "Income_Budget__c",
+                "referenceId": "Income_Budget__cRef3"
+            },
+            "Name": "24/25 - Devreden from 23/24"
+        },
+        {
+            "attributes": {
+                "type": "Income_Budget__c",
+                "referenceId": "Income_Budget__cRef4"
+            },
+            "Name": "24/25 - Donations"
+        },
+        {
+            "attributes": {
+                "type": "Income_Budget__c",
+                "referenceId": "Income_Budget__cRef5"
+            },
+            "Name": "24/25 - FAIRS"
+        }
+    ]
+}

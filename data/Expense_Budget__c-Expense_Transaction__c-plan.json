@@ -1,0 +1,18 @@
+[
+    {
+        "sobject": "Expense_Budget__c",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "Expense_Budget__c.json"
+        ]
+    },
+    {
+        "sobject": "Expense_Transaction__c",
+        "saveRefs": false,
+        "resolveRefs": true,
+        "files": [
+            "Expense_Transaction__c.json"
+        ]
+    }
+]

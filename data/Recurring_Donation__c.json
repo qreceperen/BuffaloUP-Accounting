@@ -1,0 +1,352 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef1"
+            },
+            "Name": "24/25 - Onur Gavasever Himmet",
+            "Donation_Pledge_Date__c": "2024-07-09",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 1200
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef2"
+            },
+            "Name": "24/25 - Faruk Oktem - HIMMET",
+            "Donation_Pledge_Date__c": "2024-06-09",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 1000
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef3"
+            },
+            "Name": "24/25 - Osman Varol - HIMMET",
+            "Donation_Pledge_Date__c": "2024-06-09",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 3500
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef4"
+            },
+            "Name": "24/25 - Siddik Abi - HIMMET",
+            "Donation_Pledge_Date__c": "2024-06-09",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 1000,
+            "Total_Amount_Received__c": 1000
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef5"
+            },
+            "Name": "24/25 - Hamide Uzun - HIMMET",
+            "Donation_Pledge_Date__c": "2024-06-09",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 75,
+            "Total_Amount_Received__c": 90
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef6"
+            },
+            "Name": "24/25 - Sertac Akarsu - Himmet",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 2000,
+            "Total_Amount_Received__c": 216.81
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef7"
+            },
+            "Name": "24/25 - Muhammed Kanik",
+            "Donation_Pledge_Date__c": "2024-06-09",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 1200
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef8"
+            },
+            "Name": "24/25 - Talha Donmez",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 2000,
+            "Total_Amount_Received__c": 2000
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef9"
+            },
+            "Name": "24/25 - Burak Yuzuguldu - Himmet",
+            "Donation_Pledge_Date__c": "2024-06-09",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 1000
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef10"
+            },
+            "Name": "24/25 - Fehmi Damgaci - HIMMET",
+            "Donation_Pledge_Date__c": "2024-06-09",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 200
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef11"
+            },
+            "Name": "24/25 - Recep Eren HIMMET",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 1500
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef12"
+            },
+            "Name": "24/25 - Ozlem Tuncer - HIMMET",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 500,
+            "Total_Amount_Received__c": 500
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef13"
+            },
+            "Name": "24/25 - Hakan Aktar - HIMMET",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 1200
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef14"
+            },
+            "Name": "24/25 - Erdem Tuncer - HIMMET",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 1200
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef15"
+            },
+            "Name": "24/25 - Fatih Gul - HIMMET",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 900,
+            "Total_Amount_Received__c": 200
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef16"
+            },
+            "Name": "24/25 - Ragip Baylar - HIMMET",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 200
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef17"
+            },
+            "Name": "24/25 - Murat Tutumlu - HIMMET",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 3360,
+            "Total_Amount_Received__c": 1360
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef18"
+            },
+            "Name": "24/25 - Murat Kucukdugenci - HIMMET",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 3400,
+            "Total_Amount_Received__c": 2180
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef19"
+            },
+            "Name": "24/25 - Mustafa Gokcek - HIMMET",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 2500,
+            "Total_Amount_Received__c": 2810.58
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef20"
+            },
+            "Name": "24/25 - Ibrahim Duyan - HIMMET",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 1000,
+            "Total_Amount_Received__c": 100
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef21"
+            },
+            "Name": "24/25 - Mehmet Kaya - HIMMET",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 600
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef22"
+            },
+            "Name": "24/25 - Abdulkadir Zakin Himmet",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 0
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef23"
+            },
+            "Name": "24/25 - Mustafa Kaya Himmet",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 600
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef24"
+            },
+            "Name": "24/25 - Hasan Ozkan - HIMMET",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 600,
+            "Total_Amount_Received__c": 100
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef25"
+            },
+            "Name": "24/25 - Mustafa Cetinkaya",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 700,
+            "Total_Amount_Received__c": 100
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef26"
+            },
+            "Name": "24/25 - Giray Gebes",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 3500,
+            "Total_Amount_Received__c": 400
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef27"
+            },
+            "Name": "24/25 - Mustafa Kekec",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 1250,
+            "Total_Amount_Received__c": 400
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef28"
+            },
+            "Name": "24/25 - Mucahit Polat",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 12103.08,
+            "Total_Amount_Received__c": 3900
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef29"
+            },
+            "Name": "24/25 - Ismail Koseoglu Himmet",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 1500
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef30"
+            },
+            "Name": "24/25 - Burak Kumek - HIMMET",
+            "Donation_Pledge_Date__c": "2024-06-09",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 1200,
+            "Total_Amount_Received__c": 98.59
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef31"
+            },
+            "Name": "24/25 - Yunus Kumek - Himmet",
+            "Donation_Pledge_Date__c": "2024-06-09",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 3500
+        },
+        {
+            "attributes": {
+                "type": "Recurring_Donation__c",
+                "referenceId": "Recurring_Donation__cRef32"
+            },
+            "Name": "24/25 - Merve Atabay - HIMMET",
+            "Donation_Pledge_Date__c": "2024-06-09",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Budget__c": "@Income_Budget__cRef1",
+            "Promised_Donation_Amount__c": 400,
+            "Total_Amount_Received__c": 100
+        }
+    ]
+}
