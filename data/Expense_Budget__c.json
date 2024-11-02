@@ -1,0 +1,52 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Expense_Budget__c",
+                "referenceId": "Expense_Budget__cRef1"
+            },
+            "Name": "24/25 -Community Affairs",
+            "Category__c": "Community Affairs",
+            "Description__c": "24/25 Fiscal yili icerisinde Community Affairs icin harcanmasi planlanan Miktar.",
+            "Fiscal_Year__c": "24/25_FY",
+            "Planned_Amount__c": 7500,
+            "Total_Amount_Spent__c": 1238.49
+        },
+        {
+            "attributes": {
+                "type": "Expense_Budget__c",
+                "referenceId": "Expense_Budget__cRef2"
+            },
+            "Name": "24/25 - Dialog",
+            "Category__c": "Dialog",
+            "Description__c": "24/25 Fiscal yili icerisinde Dialog icin harcanmasi planlanan Miktar.",
+            "Fiscal_Year__c": "24/25_FY",
+            "Planned_Amount__c": 10150,
+            "Total_Amount_Spent__c": 113.36
+        },
+        {
+            "attributes": {
+                "type": "Expense_Budget__c",
+                "referenceId": "Expense_Budget__cRef3"
+            },
+            "Name": "24/25 - Rehberlik",
+            "Category__c": "Rehberlik",
+            "Description__c": "24/25 Fiscal yili icerisinde Rehberlik icin harcanmasi planlanan Miktar.",
+            "Fiscal_Year__c": "24/25_FY",
+            "Planned_Amount__c": 37195,
+            "Total_Amount_Spent__c": 4314.36
+        },
+        {
+            "attributes": {
+                "type": "Expense_Budget__c",
+                "referenceId": "Expense_Budget__cRef4"
+            },
+            "Name": "24/25 - Finans Operational",
+            "Category__c": "Finans / Operational",
+            "Description__c": "24/25 Fiscal yili icerisinde Finans Operational icin harcanmasi planlanan Miktar.",
+            "Fiscal_Year__c": "24/25_FY",
+            "Planned_Amount__c": 21050,
+            "Total_Amount_Spent__c": 3087.1
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+Select Id, Name, 
+
+(Select Id, Name, Description__c, Donation_Pledge_Date__c, Fiscal_Year__c, Income_Budget__c, Promised_Donation_Amount__c, Total_Amount_Received__c,
+ (Select Id, Description__c, Donor_Name__c, Fiscal_Year__c, Income_Budget__c, Income_Date__c, Income_Type__c, Payment_Type__c, Recurring_Donation__c, Amount__c  FROM Incomes__r) 
+FROM Recurring_Donations__r)
+
+
+ FROM Income_Budget__c 

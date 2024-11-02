@@ -1,0 +1,361 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef1"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-08-15",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef4",
+            "Amount__c": 1000
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef2"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-15",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef5",
+            "Amount__c": 70
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef3"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-15",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef5",
+            "Amount__c": 20
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef4"
+            },
+            "Description__c": "24/25 Fall Festival Harcamalari yapti Himmetten Dusuldu.",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-28",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef6",
+            "Amount__c": 216.81
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef5"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-07-15",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef8",
+            "Amount__c": 2000
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef6"
+            },
+            "Description__c": "Erdem Tuncer( Ozlem Tuncer balance from 23-24)",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-10-21",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef12",
+            "Amount__c": 500
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef7"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-04",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef15",
+            "Amount__c": 200
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef8"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-20",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef17",
+            "Amount__c": 1360
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef9"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-29",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Paypal",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef18",
+            "Amount__c": 50
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef10"
+            },
+            "Description__c": "Onur Tat Hocaya Burs olarak odendi.",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-08-15",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Paypal",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef18",
+            "Amount__c": 1400
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef11"
+            },
+            "Description__c": "Mevlit kandili icin Yemek odemesi ve Alisveris yapti.",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-15",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef18",
+            "Amount__c": 730
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef12"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-10-25",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef19",
+            "Amount__c": 404.53
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef13"
+            },
+            "Description__c": "NJ deki donemlik toplanti harcamalari. Himmet olarak girildi.",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-23",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Paypal",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef19",
+            "Amount__c": 90
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef14"
+            },
+            "Description__c": "Fall Festival Icin Alisveris Yapti. Expense ciktisi ve Recurring Donation girdisi olarak girildi.",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-29",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef19",
+            "Amount__c": 566.05
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef15"
+            },
+            "Description__c": "Murat Kucukduvenciye Cash olarak verdi.",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-15",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Cash",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef19",
+            "Amount__c": 1500
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef16"
+            },
+            "Description__c": "Mevlit Kandili icin Shelter Kiraladi.",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-15",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef19",
+            "Amount__c": 250
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef17"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-23",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef20",
+            "Amount__c": 100
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef18"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-08-12",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Cash",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef24",
+            "Amount__c": 100
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef19"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-07-08",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef25",
+            "Amount__c": 100
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef20"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-10-07",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef26",
+            "Amount__c": 300
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef21"
+            },
+            "Description__c": "Fall Festival de Alisveris Yapti. Expense olarak cikildi ve girdisi Income olarak girdisi yapildi.",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-28",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Paypal",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef26",
+            "Amount__c": 100
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef22"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-10-29",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef27",
+            "Amount__c": 200
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef23"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-15",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef27",
+            "Amount__c": 200
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef24"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-20",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef28",
+            "Amount__c": 3000
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef25"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-08-12",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Cash",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef28",
+            "Amount__c": 500
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef26"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-07-26",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef28",
+            "Amount__c": 200
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef27"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-07-26",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef28",
+            "Amount__c": 200
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef28"
+            },
+            "Description__c": "Onur Gavaseverin Mevlit kandili programi icin yaptigi alisverisi reimburse etti.",
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-15",
+            "Income_Type__c": "Recurring Donation",
+            "Payment_Type__c": "Zelle",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef30",
+            "Amount__c": 98.59
+        },
+        {
+            "attributes": {
+                "type": "Income_Transaction__c",
+                "referenceId": "Income_Transaction__cRef29"
+            },
+            "Fiscal_Year__c": "24/25_FY",
+            "Income_Date__c": "2024-09-09",
+            "Income_Type__c": "Recurring Donation",
+            "Recurring_Donation__c": "@Recurring_Donation__cRef32",
+            "Amount__c": 100
+        }
+    ]
+}

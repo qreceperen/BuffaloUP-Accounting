@@ -1,0 +1,339 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef1"
+            },
+            "Amount__c": 132.01,
+            "Description__c": "Community Kahvalti Programi - Bosna Kultur Merkezi",
+            "Expense_Budget__c": "@Expense_Budget__cRef1",
+            "Expense_Date__c": "2024-10-19",
+            "Expense_Type__c": "Community Event",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef2"
+            },
+            "Amount__c": 250,
+            "Description__c": "Mevlit Kandili Shelter Kirasi",
+            "Expense_Budget__c": "@Expense_Budget__cRef1",
+            "Expense_Date__c": "2024-09-21",
+            "Expense_Type__c": "Community Event",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef3"
+            },
+            "Amount__c": 550,
+            "Description__c": "Mevlit kandili Pilav yapimi Malzeme + iscilik",
+            "Expense_Budget__c": "@Expense_Budget__cRef1",
+            "Expense_Date__c": "2024-09-21",
+            "Expense_Type__c": "Community Event",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef4"
+            },
+            "Amount__c": 27.89,
+            "Description__c": "Goods,Utensiels for women program",
+            "Expense_Budget__c": "@Expense_Budget__cRef1",
+            "Expense_Date__c": "2024-08-13",
+            "Expense_Type__c": "Community Event",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef5"
+            },
+            "Amount__c": 98.59,
+            "Description__c": "Mevlit Kandili Alisveris",
+            "Expense_Budget__c": "@Expense_Budget__cRef1",
+            "Expense_Date__c": "2024-09-21",
+            "Expense_Type__c": "Community Event",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef6"
+            },
+            "Amount__c": 180,
+            "Description__c": "Mevlit Kandili Alisveris",
+            "Expense_Budget__c": "@Expense_Budget__cRef1",
+            "Expense_Date__c": "2024-09-21",
+            "Expense_Type__c": "Community Event",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef7"
+            },
+            "Amount__c": 76.4,
+            "Description__c": "Dialog Commite Coffe Night Expenses",
+            "Expense_Budget__c": "@Expense_Budget__cRef2",
+            "Expense_Date__c": "2024-10-10",
+            "Expense_Type__c": "Dialog Commitee",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef8"
+            },
+            "Amount__c": 36.96,
+            "Description__c": "Festival Harcamasi",
+            "Expense_Budget__c": "@Expense_Budget__cRef2",
+            "Expense_Date__c": "2024-09-21",
+            "Expense_Type__c": "Dialog Commitee",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef9"
+            },
+            "Amount__c": 27,
+            "Description__c": "Lise Rehberlik Harcamasi",
+            "Expense_Budget__c": "@Expense_Budget__cRef3",
+            "Expense_Date__c": "2024-11-01",
+            "Expense_Type__c": "Talebe Rehberlik",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef10"
+            },
+            "Amount__c": 16.86,
+            "Description__c": "Orta okul rehberligi",
+            "Expense_Budget__c": "@Expense_Budget__cRef3",
+            "Expense_Date__c": "2024-10-17",
+            "Expense_Type__c": "Talebe Rehberlik",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef11"
+            },
+            "Amount__c": 60,
+            "Description__c": "Ogrencilere Kahvalti - Midya Hanim",
+            "Expense_Budget__c": "@Expense_Budget__cRef3",
+            "Expense_Date__c": "2024-10-14",
+            "Expense_Type__c": "Talebe Rehberlik",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef12"
+            },
+            "Amount__c": 52.5,
+            "Expense_Budget__c": "@Expense_Budget__cRef3",
+            "Expense_Date__c": "2024-10-12",
+            "Expense_Type__c": "Talebe Rehberlik",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef13"
+            },
+            "Amount__c": 300,
+            "Description__c": "Hamide Hanim Ogrenciler icin Rehberlik Harcamalari.",
+            "Expense_Budget__c": "@Expense_Budget__cRef3",
+            "Expense_Date__c": "2024-10-11",
+            "Expense_Type__c": "Talebe Rehberlik",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef14"
+            },
+            "Amount__c": 700,
+            "Description__c": "Onur bey burs",
+            "Expense_Budget__c": "@Expense_Budget__cRef3",
+            "Expense_Date__c": "2024-10-03",
+            "Expense_Type__c": "Mentor Burs",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef15"
+            },
+            "Amount__c": 161,
+            "Description__c": "Ogrenciler icin Mevlit Kandili Hediyesi Alindi",
+            "Expense_Budget__c": "@Expense_Budget__cRef3",
+            "Expense_Date__c": "2024-09-15",
+            "Expense_Type__c": "Talebe Rehberlik",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef16"
+            },
+            "Amount__c": 50,
+            "Description__c": "September Community Okuma Programi Harcamalari. harcama Toplam 116. Ama mazleme artip goturuldugu icin Harcama yapan kisi 50 Dolar reimburse yapilmasini istedi.",
+            "Expense_Budget__c": "@Expense_Budget__cRef3",
+            "Expense_Date__c": "2024-09-29",
+            "Expense_Type__c": "Others",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef17"
+            },
+            "Amount__c": 1000,
+            "Description__c": "CHECK-5047-CNY Rise Center",
+            "Expense_Budget__c": "@Expense_Budget__cRef3",
+            "Expense_Date__c": "2024-08-13",
+            "Expense_Type__c": "Talebe Rehberlik",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef18"
+            },
+            "Amount__c": 547,
+            "Description__c": "Erkek evine Esya alindi.",
+            "Expense_Budget__c": "@Expense_Budget__cRef3",
+            "Expense_Date__c": "2024-07-12",
+            "Expense_Type__c": "Others",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef19"
+            },
+            "Amount__c": 1400,
+            "Description__c": "Onur Tat bey Aug - Eylul Bursu",
+            "Expense_Budget__c": "@Expense_Budget__cRef3",
+            "Expense_Date__c": "2024-08-14",
+            "Expense_Type__c": "Mentor Burs",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef20"
+            },
+            "Amount__c": 404.53,
+            "Description__c": "Mustafa G. - Amerika National Platform , Northeast bolgesi adina katildi. Otel ve ucak masrafi",
+            "Expense_Budget__c": "@Expense_Budget__cRef4",
+            "Expense_Date__c": "2024-09-02",
+            "Expense_Type__c": "Others",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef21"
+            },
+            "Amount__c": 180,
+            "Description__c": "Fislerin toplami daha fazla ama 180 Reimbursment istedi.",
+            "Expense_Budget__c": "@Expense_Budget__cRef4",
+            "Expense_Date__c": "2024-09-28",
+            "Expense_Type__c": "Fairs",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef22"
+            },
+            "Amount__c": 90,
+            "Description__c": "Donemlik Toplanti icin Benzin Parasi. (Mustafa Gokcek)",
+            "Expense_Budget__c": "@Expense_Budget__cRef4",
+            "Expense_Date__c": "2024-09-23",
+            "Expense_Type__c": "Others",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef23"
+            },
+            "Amount__c": 100,
+            "Description__c": "24/25 Fall Festival icin Harcama.\r\nEkmek, Tup Dolumu, Cop poseti, 4 torba buz.",
+            "Expense_Budget__c": "@Expense_Budget__cRef4",
+            "Expense_Date__c": "2024-09-28",
+            "Expense_Type__c": "Fairs",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef24"
+            },
+            "Amount__c": 566.05,
+            "Description__c": "Fall Festival icin New Jersey Harcamasi",
+            "Expense_Budget__c": "@Expense_Budget__cRef4",
+            "Expense_Date__c": "2024-09-21",
+            "Expense_Type__c": "Fairs",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef25"
+            },
+            "Amount__c": 216.81,
+            "Description__c": "24/25 Fall Festival Yiyecek Harcamalari",
+            "Expense_Budget__c": "@Expense_Budget__cRef4",
+            "Expense_Date__c": "2024-09-28",
+            "Expense_Type__c": "Fairs",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef26"
+            },
+            "Amount__c": 140.18,
+            "Description__c": "24/25 Fall Festival Harcamalari",
+            "Expense_Budget__c": "@Expense_Budget__cRef4",
+            "Expense_Date__c": "2024-09-28",
+            "Expense_Type__c": "Fairs",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef27"
+            },
+            "Amount__c": 189.53,
+            "Description__c": "Erie County Fair icin Malzeme alindi.",
+            "Expense_Budget__c": "@Expense_Budget__cRef4",
+            "Expense_Date__c": "2024-09-20",
+            "Expense_Type__c": "Fairs",
+            "Fiscal_Year__c": "24/25_FY"
+        },
+        {
+            "attributes": {
+                "type": "Expense_Transaction__c",
+                "referenceId": "Expense_Transaction__cRef28"
+            },
+            "Amount__c": 1200,
+            "Description__c": "Rumi Kira Odemesi \r\nApril 2024 - June 2024",
+            "Expense_Budget__c": "@Expense_Budget__cRef4",
+            "Expense_Date__c": "2024-06-22",
+            "Expense_Type__c": "Others",
+            "Fiscal_Year__c": "24/25_FY"
+        }
+    ]
+}

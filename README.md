@@ -129,5 +129,7 @@ Income Budget Category addition
 
 
 
-
+8. Bir kisinin recurring record indan herhangibir income transaction silinirse, yada baska birine aktarilirsa, kisinin hesaplamasi update olmuyor. 
+Yani mesela John 1000 dolar recurring record u olsun. 100 dolar income transaction girilsin. Kalan 900 olarak dogru hesaplaniyor ve 100 dolar related ksiminda goruluyor
+Ancak Bu related 100 dolar silinir yada baskasina aktarilirsa kalan kisim hala 900 goruluyor. Burada recalculate edip 1000 yazmasi gerek tekrardan.
   
