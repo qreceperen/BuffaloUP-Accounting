@@ -2,44 +2,40 @@
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Income_Transaction__c.Amount__c</field>
+        <field>Recurring_Donation__c.Incomes__r$Amount__c</field>
     </columns>
-    <columns>
-        <field>Income_Transaction__c.Fiscal_Year__c</field>
-    </columns>
-    <description>Bu tablo secilen Fiscal yilda her ay icin Donor un ne kadar odedigini gosteren tablodur.</description>
     <filter>
         <criteriaItems>
-            <column>Income_Transaction__c.Fiscal_Year__c</column>
+            <column>Recurring_Donation__c$Fiscal_Year__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>23/24_FY</value>
+            <value>24/25_FY</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Month</dateGranularity>
-        <field>Income_Transaction__c.Income_Date__c</field>
+        <field>Recurring_Donation__c.Incomes__r$Income_Date__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>FK_NAME</field>
+        <field>Recurring_Donation__c$Name</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Each Month Recurring Donation Table</name>
+    <name>All Recurring Donations Month by Month</name>
     <params>
         <name>co</name>
         <value>0</value>
     </params>
-    <reportType>CustomEntity$Income_Transaction__c@Income_Transaction__c.Recurring_Donation__c</reportType>
-    <scope>organization</scope>
+    <reportType>Recurring_Donations_With_Income_Transactions__c</reportType>
+    <scope>user</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>false</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Income_Transaction__c.Income_Date__c</dateColumn>
+        <dateColumn>Recurring_Donation__c$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

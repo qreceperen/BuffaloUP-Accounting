@@ -18,7 +18,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>23/24_FY</value>
+            <value>24/25_FY</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
