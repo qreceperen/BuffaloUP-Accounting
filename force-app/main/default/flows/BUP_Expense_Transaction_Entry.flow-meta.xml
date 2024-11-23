@@ -1,12 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Create_Follow_Up_Task</name>
+        <label>Create Follow Up Task</label>
+        <locationX>50</locationX>
+        <locationY>974</locationY>
+        <actionName>NewTask</actionName>
+        <actionType>quickAction</actionType>
+        <faultConnector>
+            <targetReference>Error_Screen</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>contextId</name>
+            <value>
+                <elementReference>Expense_Transaction_Object.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Subject</name>
+            <value>
+                <elementReference>Task_Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OwnerId</name>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>NewTask</nameSegment>
+        <offset>0</offset>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
     <apiVersion>62.0</apiVersion>
     <assignments>
         <description>- Take document link into single document link object
 - Attach entity Id (entity id is in our income transaction id)</description>
         <name>Assign_Content_Link_Variables</name>
         <label>Assign Content Link Variables</label>
-        <locationX>264</locationX>
+        <locationX>402</locationX>
         <locationY>566</locationY>
         <assignmentItems>
             <assignToReference>singleContentDocumentLink.ContentDocumentId</assignToReference>
@@ -37,7 +70,7 @@
         <description>Assign Amount field to Expense object value.</description>
         <name>Assign_Values</name>
         <label>Assign Values</label>
-        <locationX>176</locationX>
+        <locationX>314</locationX>
         <locationY>242</locationY>
         <assignmentItems>
             <assignToReference>Expense_Transaction_Object.Amount__c</assignToReference>
@@ -50,6 +83,28 @@
             <targetReference>Create_Expense_Transaction</targetReference>
         </connector>
     </assignments>
+    <decisions>
+        <name>Decision_1</name>
+        <label>Decision 1</label>
+        <locationX>314</locationX>
+        <locationY>866</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Create_Task</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Would_you_like_to_create_follow_up_Task</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Follow_Up_Task</targetReference>
+            </connector>
+            <label>Create Task</label>
+        </rules>
+    </decisions>
     <description>Provide easy way to enter Expense transaction record</description>
     <environments>Default</environments>
     <interviewLabel>BUP_Expense Transaction Entry {!$Flow.CurrentDateTime}</interviewLabel>
@@ -57,7 +112,7 @@
     <loops>
         <name>Loop_File_Uploads</name>
         <label>Loop File Uploads</label>
-        <locationX>176</locationX>
+        <locationX>314</locationX>
         <locationY>458</locationY>
         <collectionReference>UploadFiles.contentDocIds</collectionReference>
         <iterationOrder>Asc</iterationOrder>
@@ -91,15 +146,18 @@
         <description>- Connect Income Transaction record and document to each other</description>
         <name>Create_Content_Document_Links</name>
         <label>Create Content Document Links</label>
-        <locationX>176</locationX>
+        <locationX>314</locationX>
         <locationY>758</locationY>
+        <connector>
+            <targetReference>Decision_1</targetReference>
+        </connector>
         <inputReference>multipleContentDocumentLinks</inputReference>
     </recordCreates>
     <recordCreates>
         <description>Creates Expense Transaction and keep the recordId.</description>
         <name>Create_Expense_Transaction</name>
         <label>Create Expense Transaction</label>
-        <locationX>176</locationX>
+        <locationX>314</locationX>
         <locationY>350</locationY>
         <connector>
             <targetReference>Loop_File_Uploads</targetReference>
@@ -107,9 +165,25 @@
         <inputReference>Expense_Transaction_Object</inputReference>
     </recordCreates>
     <screens>
+        <name>Error_Screen</name>
+        <label>Error Screen</label>
+        <locationX>314</locationX>
+        <locationY>1082</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>ErrorScreen</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Error Message: &lt;/strong&gt;{!$Flow.FaultMessage}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
         <name>Expense_Details_Screen</name>
         <label>Expense Details Screen</label>
-        <locationX>176</locationX>
+        <locationX>314</locationX>
         <locationY>134</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -119,7 +193,7 @@
         </connector>
         <fields>
             <name>Title</name>
-            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 28px; color: rgb(237, 30, 30); font-family: courier; background-color: rgb(255, 255, 255);&quot;&gt;Expense Entry&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); font-family: courier; color: rgb(237, 30, 30); font-size: 28px;&quot;&gt;Expense Entry&lt;/strong&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -220,12 +294,81 @@
             <isRequired>false</isRequired>
             <regionContainerType>SectionWithoutHeader</regionContainerType>
         </fields>
+        <fields>
+            <name>Expense_Details_Screen_Section2</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Expense_Details_Screen_Section2_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Would_you_like_to_create_follow_up_Task</name>
+                    <dataType>Boolean</dataType>
+                    <fieldText>Would you like to create follow up Task?</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                </fields>
+                <fields>
+                    <name>TaskScreen</name>
+                    <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(71, 182, 51); font-size: 20px; font-family: courier; background-color: rgb(255, 255, 255);&quot;&gt;Task Entry&lt;/strong&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                    <visibilityRule>
+                        <conditionLogic>and</conditionLogic>
+                        <conditions>
+                            <leftValueReference>Would_you_like_to_create_follow_up_Task</leftValueReference>
+                            <operator>EqualTo</operator>
+                            <rightValue>
+                                <booleanValue>true</booleanValue>
+                            </rightValue>
+                        </conditions>
+                    </visibilityRule>
+                </fields>
+                <fields>
+                    <name>Task_Subject</name>
+                    <dataType>String</dataType>
+                    <fieldText>Task Subject</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                    <visibilityRule>
+                        <conditionLogic>and</conditionLogic>
+                        <conditions>
+                            <leftValueReference>Would_you_like_to_create_follow_up_Task</leftValueReference>
+                            <operator>EqualTo</operator>
+                            <rightValue>
+                                <booleanValue>true</booleanValue>
+                            </rightValue>
+                        </conditions>
+                    </visibilityRule>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Expense_Details_Screen_Section2_Column2</name>
+                <fieldType>Region</fieldType>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
         <nextOrFinishButtonLabel>Upload Transaction</nextOrFinishButtonLabel>
         <showFooter>true</showFooter>
         <showHeader>false</showHeader>
     </screens>
     <start>
-        <locationX>50</locationX>
+        <locationX>188</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Expense_Details_Screen</targetReference>
