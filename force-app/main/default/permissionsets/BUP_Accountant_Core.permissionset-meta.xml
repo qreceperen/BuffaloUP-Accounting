@@ -75,11 +75,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Expense_Budget__c.Total_Amount_Left_to_Spend__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Expense_Transaction__c.Account__c</field>
         <readable>true</readable>
