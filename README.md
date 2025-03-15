@@ -107,11 +107,6 @@ STORIES
 1. Carry over kismi eklemeliyiz (simdilik manuel olabilir). Kisinin kalan miktarini carry over olarak yeni yila yazariz. Ama Balance sifirlanmali carry over dan sonra (yada oyle birakilip sorarsa
 gosterilmeli bir not ile beraber)
 2. Income Budgettegi Planned Amount verilen himmet sozlerine gore otomatik hesaplanabilir. Amam bu diger income budget degerlerini nasil etkiler detayli test yapilmali.
-3. Recurring Donation girdilerini yapmak zor. Salesforce bilmeyen icin zor olabilir. Bunun icin Screen Flow yapip Home yada App Page de tutmak lazim. 
-   - Himmet icin ayri
-   - Donation icin ayri
-   - Normal gelirler icin ayri  
-   - Yada hep beraber deneyip gormek lazim
 
 4. Expense ler hangi comminite tarafindan yapildi bunu belirleyecek bir picklist lazim
 Income Budget Category addition 
