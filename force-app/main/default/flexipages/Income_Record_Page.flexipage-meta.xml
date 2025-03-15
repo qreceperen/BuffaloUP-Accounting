@@ -159,6 +159,16 @@
                 </visibilityRule>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Contact__c</fieldItem>
+                <identifier>RecordContact__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-49e63bf1-0e07-4ddc-852a-2d99caa52828</name>
         <type>Facet</type>
     </flexiPageRegions>

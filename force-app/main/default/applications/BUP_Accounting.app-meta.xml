@@ -131,6 +131,7 @@
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
     <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
     <tabs>Income_Budget__c</tabs>
     <tabs>Expense_Budget__c</tabs>
     <tabs>Income_Transaction__c</tabs>
