@@ -74,11 +74,6 @@
         <field>Expense_Budget__c.Planned_Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
-        <fieldPermissions>
-        <editable>false</editable>
-        <field>Expense_Budget__c.Total_Amount_Spent__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Expense_Transaction__c.Account__c</field>
@@ -146,6 +141,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Income_Transaction__c.Account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Income_Transaction__c.Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -157,11 +157,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Income_Transaction__c.Description__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Income_Transaction__c.Donor_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -192,6 +187,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Income_Transaction__c.Recurring_Donation__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Recurring_Donation__c.Account__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -413,10 +413,6 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
-        <name>ModifyMetadata</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
         <name>PasswordNeverExpires</name>
     </userPermissions>
     <userPermissions>
@@ -426,9 +422,5 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ViewRoles</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>ViewSetup</name>
     </userPermissions>
 </PermissionSet>
