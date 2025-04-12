@@ -62,6 +62,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Account__c</field>
+            <table>Recurring_Donation__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Fiscal_Year__c</field>
             <table>Recurring_Donation__c</table>
         </columns>
@@ -83,6 +88,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Total_Amount_Left_to_Receive__c</field>
+            <table>Recurring_Donation__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact__c</field>
             <table>Recurring_Donation__c</table>
         </columns>
         <masterLabel>Recurring Donations</masterLabel>
@@ -166,6 +176,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Payment_Type__c</field>
+            <table>Recurring_Donation__c.Incomes__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact__c</field>
             <table>Recurring_Donation__c.Incomes__r</table>
         </columns>
         <masterLabel>Income Transactions</masterLabel>

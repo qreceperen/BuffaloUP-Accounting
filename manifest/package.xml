@@ -80,6 +80,10 @@
         <name>Profile</name>
     </types>
     <types>
+        <members>Recurring_Donations_With_Income_Transactions</members>
+        <name>ReportType</name>
+    </types>
+    <types>
         <members>unfiled$public/Each_Month_Recurring_Donation_Table_igz</members>
         <members>unfiled$public/Recurring_Donation_Ozet_jSW</members>
         <members>unfiled$public/Total_Income_5gZ</members>
