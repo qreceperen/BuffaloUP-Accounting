@@ -163,7 +163,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Donor_Name__c</fieldItem>
+                <fieldItem>Record.Account__c</fieldItem>
                 <identifier>RecordDonor_Name_cField</identifier>
             </fieldInstance>
         </itemInstances>

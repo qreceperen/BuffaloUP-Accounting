@@ -160,7 +160,7 @@
                             <value>NAME</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Donor_Name__c</value>
+                            <value>Account__c</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Total_Amount_Received__c</value>
