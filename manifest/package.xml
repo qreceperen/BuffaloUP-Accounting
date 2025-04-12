@@ -4,5 +4,9 @@
         <members>Recurring_Donations_With_Income_Transactions</members>
         <name>ReportType</name>
     </types>
-    <version>61.0</version>
+        <types>
+        <members>Recurring_Donation__c.Account__c</members>
+        <name>CustomField</name>
+    </types>
+    <version>63.0</version>
 </Package>
