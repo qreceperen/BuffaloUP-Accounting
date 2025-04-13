@@ -181,6 +181,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Income_Transaction__c.Income_Transaction_Fiscal_Year__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Income_Transaction__c.Income_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
