@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recurring_Donation_FY_Must_Match_Budget</fullName>
+    <active>true</active>
+    <description>Ensures that the Fiscal Year selected on the Recurring Donation matches the Fiscal Year of the associated Income Budget. This helps maintain data consistency for reporting and automated calculations.</description>
+    <errorConditionFormula>AND(
+  NOT(ISBLANK(Income_Budget__c)),
+  TEXT(Fiscal_Year__c) &lt;&gt; TEXT(Income_Budget__r.Fiscal_Year__c)
+)</errorConditionFormula>
+    <errorDisplayField>Fiscal_Year__c</errorDisplayField>
+    <errorMessage>Fiscal Year of the Recurring Donation must match the Fiscal Year of the related Income Budget.</errorMessage>
+</ValidationRule>
