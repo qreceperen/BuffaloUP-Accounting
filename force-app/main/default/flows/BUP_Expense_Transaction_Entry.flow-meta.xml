@@ -31,7 +31,6 @@
         </inputParameters>
         <nameSegment>NewTask</nameSegment>
         <offset>0</offset>
-        <versionSegment>1</versionSegment>
     </actionCalls>
     <apiVersion>62.0</apiVersion>
     <assignments>
@@ -164,6 +163,7 @@
         </connector>
         <inputReference>Expense_Transaction_Object</inputReference>
     </recordCreates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
     <screens>
         <name>Error_Screen</name>
         <label>Error Screen</label>

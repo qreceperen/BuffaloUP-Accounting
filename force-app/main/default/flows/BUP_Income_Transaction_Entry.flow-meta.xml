@@ -105,6 +105,7 @@
         </connector>
         <inputReference>IncomeTransaction</inputReference>
     </recordCreates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
     <screens>
         <name>Income_Details_Screen</name>
         <label>Income Details Screen</label>
@@ -181,7 +182,7 @@
                     <fieldType>ObjectProvided</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
-                    <objectFieldReference>IncomeTransaction.Donor_Name__c</objectFieldReference>
+                    <objectFieldReference>IncomeTransaction.Account__c</objectFieldReference>
                     <visibilityRule>
                         <conditionLogic>and</conditionLogic>
                         <conditions>
