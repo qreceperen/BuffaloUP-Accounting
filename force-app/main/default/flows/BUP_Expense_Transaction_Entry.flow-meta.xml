@@ -4,7 +4,7 @@
         <name>Create_Follow_Up_Task</name>
         <label>Create Follow Up Task</label>
         <locationX>50</locationX>
-        <locationY>974</locationY>
+        <locationY>2054</locationY>
         <actionName>NewTask</actionName>
         <actionType>quickAction</actionType>
         <faultConnector>
@@ -31,7 +31,6 @@
         </inputParameters>
         <nameSegment>NewTask</nameSegment>
         <offset>0</offset>
-        <versionSegment>1</versionSegment>
     </actionCalls>
     <apiVersion>62.0</apiVersion>
     <assignments>
@@ -67,6 +66,22 @@
         </connector>
     </assignments>
     <assignments>
+        <name>Assign_Document_Ids</name>
+        <label>Assign Document Ids</label>
+        <locationX>402</locationX>
+        <locationY>1082</locationY>
+        <assignmentItems>
+            <assignToReference>varDocumentIds</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Collect_Document_Ids.ContentDocumentId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Collect_Document_Ids</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <description>Assign Amount field to Expense object value.</description>
         <name>Assign_Values</name>
         <label>Assign Values</label>
@@ -83,11 +98,34 @@
             <targetReference>Create_Expense_Transaction</targetReference>
         </connector>
     </assignments>
+    <assignments>
+        <name>Rename_Documents</name>
+        <label>Rename Documents</label>
+        <locationX>402</locationX>
+        <locationY>1598</locationY>
+        <assignmentItems>
+            <assignToReference>Loop_Documents_to_Rename.Title</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>frmCalcName</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>counter</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Documents_Name</targetReference>
+        </connector>
+    </assignments>
     <decisions>
         <name>Decision_1</name>
         <label>Decision 1</label>
         <locationX>314</locationX>
-        <locationY>866</locationY>
+        <locationY>1946</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Create_Task</name>
@@ -107,8 +145,43 @@
     </decisions>
     <description>Provide easy way to enter Expense transaction record</description>
     <environments>Default</environments>
+    <formulas>
+        <description>Rename the titles within expense transaction name.</description>
+        <name>frmCalcName</name>
+        <dataType>String</dataType>
+        <expression>{!Get_Commited_Transaction.Name} + &apos;-&apos; + TEXT({!counter})</expression>
+    </formulas>
     <interviewLabel>BUP_Expense Transaction Entry {!$Flow.CurrentDateTime}</interviewLabel>
     <label>BUP_Expense Transaction Entry</label>
+    <loops>
+        <name>Collect_Document_Ids</name>
+        <label>Collect Document Ids</label>
+        <locationX>314</locationX>
+        <locationY>974</locationY>
+        <collectionReference>Get_Document_Links</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_Document_Ids</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>getDocs</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <description>Loop uploaded documents to rename it.</description>
+        <name>Loop_Documents_to_Rename</name>
+        <label>Loop Documents to Rename</label>
+        <locationX>314</locationX>
+        <locationY>1490</locationY>
+        <collectionReference>getDocs</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Rename_Documents</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Decision_1</targetReference>
+        </noMoreValuesConnector>
+    </loops>
     <loops>
         <name>Loop_File_Uploads</name>
         <label>Loop File Uploads</label>
@@ -143,14 +216,18 @@
     </processMetadataValues>
     <processType>Flow</processType>
     <recordCreates>
-        <description>- Connect Income Transaction record and document to each other</description>
+        <description>- Connect Expense Transaction record and document to each other</description>
         <name>Create_Content_Document_Links</name>
         <label>Create Content Document Links</label>
         <locationX>314</locationX>
         <locationY>758</locationY>
         <connector>
-            <targetReference>Decision_1</targetReference>
+            <targetReference>Get_Document_Links</targetReference>
         </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Error_Screen</targetReference>
+        </faultConnector>
         <inputReference>multipleContentDocumentLinks</inputReference>
     </recordCreates>
     <recordCreates>
@@ -162,13 +239,108 @@
         <connector>
             <targetReference>Loop_File_Uploads</targetReference>
         </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Error_Screen</targetReference>
+        </faultConnector>
         <inputReference>Expense_Transaction_Object</inputReference>
     </recordCreates>
+    <recordLookups>
+        <name>Get_Commited_Transaction</name>
+        <label>Get Commited Transaction</label>
+        <locationX>314</locationX>
+        <locationY>1382</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Documents_to_Rename</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Error_Screen</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Expense_Transaction_Object.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Expense_Transaction__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Newly Created document links</description>
+        <name>Get_Document_Links</name>
+        <label>Get Document Links</label>
+        <locationX>314</locationX>
+        <locationY>866</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Collect_Document_Ids</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Error_Screen</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LinkedEntityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Expense_Transaction_Object.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>ContentDocumentLink</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>getDocs</name>
+        <label>getDocs</label>
+        <locationX>314</locationX>
+        <locationY>1274</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Commited_Transaction</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Error_Screen</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>In</operator>
+            <value>
+                <elementReference>varDocumentIds</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>ContentDocument</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Documents_Name</name>
+        <label>Update Documents Name</label>
+        <locationX>402</locationX>
+        <locationY>1706</locationY>
+        <connector>
+            <targetReference>Loop_Documents_to_Rename</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Error_Screen</targetReference>
+        </faultConnector>
+        <inputReference>Loop_Documents_to_Rename</inputReference>
+    </recordUpdates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
     <screens>
         <name>Error_Screen</name>
         <label>Error Screen</label>
         <locationX>314</locationX>
-        <locationY>1082</locationY>
+        <locationY>2162</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -376,6 +548,17 @@
     </start>
     <status>Active</status>
     <variables>
+        <name>counter</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>1.0</numberValue>
+        </value>
+    </variables>
+    <variables>
         <description>Expense Transaction Object</description>
         <name>Expense_Transaction_Object</name>
         <dataType>SObject</dataType>
@@ -399,5 +582,13 @@
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <objectType>ContentDocumentLink</objectType>
+    </variables>
+    <variables>
+        <description>Collect all document Ids</description>
+        <name>varDocumentIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
     </variables>
 </Flow>
