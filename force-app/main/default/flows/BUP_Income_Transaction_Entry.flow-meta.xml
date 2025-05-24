@@ -19,7 +19,7 @@
             <assignToReference>singleContentDocumentLink.LinkedEntityId</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>IncomeTransaction.Id</elementReference>
+                <elementReference>Income_Transaction_Record.Id</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -39,7 +39,7 @@
         <locationX>176</locationX>
         <locationY>242</locationY>
         <assignmentItems>
-            <assignToReference>IncomeTransaction.Amount__c</assignToReference>
+            <assignToReference>Income_Transaction_Record.Amount__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>Amount</elementReference>
@@ -103,7 +103,7 @@
         <connector>
             <targetReference>Loop_File_Uploads</targetReference>
         </connector>
-        <inputReference>IncomeTransaction</inputReference>
+        <inputReference>Income_Transaction_Record</inputReference>
     </recordCreates>
     <runInMode>SystemModeWithoutSharing</runInMode>
     <screens>
@@ -132,17 +132,17 @@
                     <fieldType>ObjectProvided</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
-                    <objectFieldReference>IncomeTransaction.Income_Type__c</objectFieldReference>
+                    <objectFieldReference>Income_Transaction_Record.Income_Type__c</objectFieldReference>
                 </fields>
                 <fields>
                     <fieldType>ObjectProvided</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
-                    <objectFieldReference>IncomeTransaction.Recurring_Donation__c</objectFieldReference>
+                    <objectFieldReference>Income_Transaction_Record.Recurring_Donation__c</objectFieldReference>
                     <visibilityRule>
                         <conditionLogic>and</conditionLogic>
                         <conditions>
-                            <leftValueReference>IncomeTransaction.Income_Type__c</leftValueReference>
+                            <leftValueReference>Income_Transaction_Record.Income_Type__c</leftValueReference>
                             <operator>EqualTo</operator>
                             <rightValue>
                                 <stringValue>Recurring Donation</stringValue>
@@ -154,11 +154,11 @@
                     <fieldType>ObjectProvided</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
-                    <objectFieldReference>IncomeTransaction.Income_Budget__c</objectFieldReference>
+                    <objectFieldReference>Income_Transaction_Record.Income_Budget__c</objectFieldReference>
                     <visibilityRule>
                         <conditionLogic>and</conditionLogic>
                         <conditions>
-                            <leftValueReference>IncomeTransaction.Income_Type__c</leftValueReference>
+                            <leftValueReference>Income_Transaction_Record.Income_Type__c</leftValueReference>
                             <operator>NotEqualTo</operator>
                             <rightValue>
                                 <stringValue>Recurring Donation</stringValue>
@@ -170,23 +170,17 @@
                     <fieldType>ObjectProvided</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
-                    <objectFieldReference>IncomeTransaction.Income_Date__c</objectFieldReference>
+                    <objectFieldReference>Income_Transaction_Record.Income_Date__c</objectFieldReference>
                 </fields>
                 <fields>
                     <fieldType>ObjectProvided</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
-                    <objectFieldReference>IncomeTransaction.Fiscal_Year__c</objectFieldReference>
-                </fields>
-                <fields>
-                    <fieldType>ObjectProvided</fieldType>
-                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-                    <isRequired>false</isRequired>
-                    <objectFieldReference>IncomeTransaction.Account__c</objectFieldReference>
+                    <objectFieldReference>Income_Transaction_Record.Account__c</objectFieldReference>
                     <visibilityRule>
                         <conditionLogic>and</conditionLogic>
                         <conditions>
-                            <leftValueReference>IncomeTransaction.Income_Type__c</leftValueReference>
+                            <leftValueReference>Income_Transaction_Record.Income_Type__c</leftValueReference>
                             <operator>NotEqualTo</operator>
                             <rightValue>
                                 <stringValue>Recurring Donation</stringValue>
@@ -218,13 +212,13 @@
                     <fieldType>ObjectProvided</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
-                    <objectFieldReference>IncomeTransaction.Payment_Type__c</objectFieldReference>
+                    <objectFieldReference>Income_Transaction_Record.Payment_Type__c</objectFieldReference>
                 </fields>
                 <fields>
                     <fieldType>ObjectProvided</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
-                    <objectFieldReference>IncomeTransaction.Description__c</objectFieldReference>
+                    <objectFieldReference>Income_Transaction_Record.Description__c</objectFieldReference>
                 </fields>
                 <fields>
                     <name>UploadFiles</name>
@@ -276,7 +270,7 @@
     <status>Active</status>
     <variables>
         <description>Income transaction Object</description>
-        <name>IncomeTransaction</name>
+        <name>Income_Transaction_Record</name>
         <dataType>SObject</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
