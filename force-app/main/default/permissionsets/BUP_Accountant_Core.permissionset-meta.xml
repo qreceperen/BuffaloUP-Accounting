@@ -333,6 +333,10 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
+        <tab>Operations</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
         <tab>Recurring_Donation__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
