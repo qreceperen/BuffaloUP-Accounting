@@ -378,12 +378,6 @@
                     <fieldType>ObjectProvided</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
-                    <objectFieldReference>Expense_Transaction_Object.Account__c</objectFieldReference>
-                </fields>
-                <fields>
-                    <fieldType>ObjectProvided</fieldType>
-                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-                    <isRequired>false</isRequired>
                     <objectFieldReference>Expense_Transaction_Object.Expense_Type__c</objectFieldReference>
                 </fields>
                 <fields>
@@ -396,7 +390,13 @@
                     <fieldType>ObjectProvided</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
-                    <objectFieldReference>Expense_Transaction_Object.Fiscal_Year__c</objectFieldReference>
+                    <objectFieldReference>Expense_Transaction_Object.Account__c</objectFieldReference>
+                </fields>
+                <fields>
+                    <fieldType>ObjectProvided</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                    <objectFieldReference>Expense_Transaction_Object.Expense_Date__c</objectFieldReference>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -413,7 +413,7 @@
                     <fieldType>ObjectProvided</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
-                    <objectFieldReference>Expense_Transaction_Object.Expense_Date__c</objectFieldReference>
+                    <objectFieldReference>Expense_Transaction_Object.Payment_Type__c</objectFieldReference>
                 </fields>
                 <fields>
                     <name>Amount</name>
