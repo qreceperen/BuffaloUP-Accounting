@@ -170,12 +170,6 @@
                     <fieldType>ObjectProvided</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
-                    <objectFieldReference>Income_Transaction_Record.Income_Date__c</objectFieldReference>
-                </fields>
-                <fields>
-                    <fieldType>ObjectProvided</fieldType>
-                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-                    <isRequired>false</isRequired>
                     <objectFieldReference>Income_Transaction_Record.Account__c</objectFieldReference>
                     <visibilityRule>
                         <conditionLogic>and</conditionLogic>
@@ -187,6 +181,12 @@
                             </rightValue>
                         </conditions>
                     </visibilityRule>
+                </fields>
+                <fields>
+                    <fieldType>ObjectProvided</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                    <objectFieldReference>Income_Transaction_Record.Income_Date__c</objectFieldReference>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -200,6 +200,12 @@
                 <name>Income_Details_Screen_Section1_Column2</name>
                 <fieldType>Region</fieldType>
                 <fields>
+                    <fieldType>ObjectProvided</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                    <objectFieldReference>Income_Transaction_Record.Payment_Type__c</objectFieldReference>
+                </fields>
+                <fields>
                     <name>Amount</name>
                     <dataType>Currency</dataType>
                     <fieldText>Amount</fieldText>
@@ -207,12 +213,6 @@
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
                     <scale>2</scale>
-                </fields>
-                <fields>
-                    <fieldType>ObjectProvided</fieldType>
-                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-                    <isRequired>false</isRequired>
-                    <objectFieldReference>Income_Transaction_Record.Payment_Type__c</objectFieldReference>
                 </fields>
                 <fields>
                     <fieldType>ObjectProvided</fieldType>
