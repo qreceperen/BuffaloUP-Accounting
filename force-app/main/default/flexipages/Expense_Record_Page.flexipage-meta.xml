@@ -124,8 +124,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Fiscal_Year__c</fieldItem>
-                <identifier>RecordFiscal_Year_cField</identifier>
+                <fieldItem>Record.Expense_Transaction_Fiscal_Year_c__c</fieldItem>
+                <identifier>RecordExpense_Transaction_Fiscal_Year_c_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
