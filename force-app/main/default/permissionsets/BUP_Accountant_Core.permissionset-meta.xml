@@ -100,6 +100,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Expense_Transaction__c.Expense_Transaction_Fiscal_Year_c__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Expense_Transaction__c.Expense_Type__c</field>
         <readable>true</readable>
@@ -159,12 +164,6 @@
         <field>Income_Transaction__c.Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Income_Transaction__c.Fiscal_Year__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-
     <fieldPermissions>
         <editable>true</editable>
         <field>Income_Transaction__c.Income_Budget__c</field>
