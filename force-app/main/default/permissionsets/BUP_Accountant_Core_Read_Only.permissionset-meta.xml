@@ -231,6 +231,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Recurring_Donation__c.Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Recurring_Donation__c.Total_Amount_Left_to_Receive__c</field>
         <readable>true</readable>
     </fieldPermissions>

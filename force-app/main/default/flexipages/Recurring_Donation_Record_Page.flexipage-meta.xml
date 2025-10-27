@@ -85,7 +85,7 @@
                             <value>NAME</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Donor_Name__c</value>
+                            <value>Account__c</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Income_Budget__c</value>
@@ -98,9 +98,6 @@
                         </valueListItems>
                         <valueListItems>
                             <value>Income_Date__c</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Fiscal_Year__c</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
@@ -185,6 +182,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Donation_Pledge_Date__c</fieldItem>
                 <identifier>RecordDonation_Date_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Status__c</fieldItem>
+                <identifier>RecordStatus_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
