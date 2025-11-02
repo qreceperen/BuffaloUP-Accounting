@@ -4,6 +4,10 @@
         <application>BUP_Accounting</application>
         <visible>true</visible>
     </applicationVisibilities>
+    <classAccesses>
+        <apexClass>BUP_BalanceController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.BillingAddress</field>

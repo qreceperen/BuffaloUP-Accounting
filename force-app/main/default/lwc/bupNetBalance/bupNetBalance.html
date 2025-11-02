@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Net Balance" icon-name="custom:custom63">
+        <div class="slds-var-p-around_large balance-container">
+            <div class="balance-label">Current Net Balance</div>
+
+            <h1 class={balanceClass}>
+                <lightning-formatted-number
+                    value={netBalance}
+                    format-style="currency"
+                    currency-code="USD">
+                </lightning-formatted-number>
+            </h1>
+
+            <lightning-button
+                label="Refresh"
+                icon-name="utility:refresh"
+                variant="neutral"
+                class="slds-m-top_medium"
+                onclick={handleRefresh}>
+            </lightning-button>
+        </div>
+
+        <template if:true={error}>
+            <div class="slds-text-color_error slds-p-around_small slds-text-align_center">
+                {error}
+            </div>
+        </template>
+    </lightning-card>
+</template>
