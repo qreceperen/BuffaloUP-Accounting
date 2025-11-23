@@ -1,3 +1,64 @@
 <template>
+    <lightning-card title="Download Tax Receipt" icon-name="standard:file">
+        
+        <div class="slds-p-around_medium">
+            
+            <!-- Info Message -->
+            <div class="slds-m-bottom_medium">
+                <lightning-icon icon-name="utility:info" size="small" class="slds-m-right_x-small"></lightning-icon>
+                <span class="slds-text-body_regular">
+                    Generate an IRS-compliant tax receipt for this donor's contributions.
+                </span>
+            </div>
 
+            <!-- Date Range Filters -->
+            <div class="slds-m-bottom_medium">
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input 
+                            type="date" 
+                            label="Start Date" 
+                            value={startDate}
+                            onchange={handleStartDateChange}
+                            required>
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input 
+                            type="date" 
+                            label="End Date" 
+                            value={endDate}
+                            onchange={handleEndDateChange}
+                            required>
+                        </lightning-input>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loading Spinner -->
+            <template if:true={isLoading}>
+                <div class="slds-m-bottom_medium">
+                    <lightning-spinner alternative-text="Generating PDF..." size="medium"></lightning-spinner>
+                </div>
+            </template>
+
+        </div>
+
+        <!-- Footer with Buttons -->
+        <div slot="footer">
+            <lightning-button 
+                label="Cancel" 
+                onclick={handleClose}
+                class="slds-m-right_x-small">
+            </lightning-button>
+            <lightning-button 
+                variant="brand" 
+                label="Download PDF"
+                icon-name="utility:download"
+                onclick={handleDownloadPdf}
+                disabled={isLoading}>
+            </lightning-button>
+        </div>
+
+    </lightning-card>
 </template>
