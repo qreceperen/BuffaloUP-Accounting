@@ -8,6 +8,12 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentName>bupRecurringDonationPayment</componentName>
+                <identifier>c_bupRecurringDonationPayment</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
                 <componentInstanceProperties>
                     <name>flowLayout</name>
                     <value>oneColumn</value>
