@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>BUP_Accountant_Core</members>
-        <name>PermissionSet</name>
+        <members>bupRecurringDonationPayment</members>
+        <name>LightningComponentBundle</name>
     </types>
     <version>63.0</version>
 </Package>

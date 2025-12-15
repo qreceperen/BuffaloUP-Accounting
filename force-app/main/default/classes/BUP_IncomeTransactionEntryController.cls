@@ -1,4 +1,4 @@
-public with sharing class BUP_IncomeTransactionEntryController {
+public without sharing class BUP_IncomeTransactionEntryController {
     @AuraEnabled(cacheable=true)
     public static List<Contact> searchContacts(String searchTerm) {
         if (String.isBlank(searchTerm)) {
