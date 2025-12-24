@@ -13,6 +13,9 @@
                             <value>Delete</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>Income_Transaction__c.Create_Receipt</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>Clone</value>
                         </valueListItems>
                         <valueListItems>
@@ -140,16 +143,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Income_Transaction_Fiscal_Year__c</fieldItem>
                 <identifier>RecordIncome_Transaction_Fiscal_Year__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Fiscal_Year__c</fieldItem>
-                <identifier>RecordFiscal_Year_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
