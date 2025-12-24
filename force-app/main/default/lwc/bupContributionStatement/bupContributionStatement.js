@@ -12,7 +12,7 @@ export default class BupDownloadReceipt extends LightningElement {
     jsPdfInitialized = false;
     isLoading = false;
     logoDataUrl;
-    
+
     // Date range properties
     startDate;
     endDate;
@@ -27,10 +27,10 @@ export default class BupDownloadReceipt extends LightningElement {
     setDefaultDateRange() {
         const now = new Date();
         const currentYear = now.getFullYear();
-        
+
         // January 1st of current year
         this.startDate = `${currentYear}-01-01`;
-        
+
         // December 31st of current year
         this.endDate = `${currentYear}-12-31`;
     }
@@ -96,7 +96,7 @@ export default class BupDownloadReceipt extends LightningElement {
             // Get contact info and transactions with date filter
             const [contactInfo, transactions] = await Promise.all([
                 getContactInfo({ contactId: this.recordId }),
-                getTransactionsByDateRange({ 
+                getTransactionsByDateRange({
                     contactId: this.recordId,
                     startDate: this.startDate,
                     endDate: this.endDate
@@ -112,7 +112,7 @@ export default class BupDownloadReceipt extends LightningElement {
             // Generate PDF
             this.generatePDF(contactInfo, transactions);
             this.showToast('Success', 'Tax receipt downloaded successfully!', 'success');
-            
+
             // Close modal after successful download
             setTimeout(() => {
                 this.handleClose();
@@ -145,21 +145,19 @@ export default class BupDownloadReceipt extends LightningElement {
         doc.setFont('helvetica', 'bold');
         doc.text('Buffalo United for Peace Inc', 200, yPosition, { align: 'right' });
         doc.setFont('helvetica', 'normal');
-        doc.text('1901 N. Market Street', 200, yPosition + 5, { align: 'right' });
-        doc.text('Wilmington, DE 19802', 200, yPosition + 10, { align: 'right' });
-        doc.text('EIN: 82-5086497', 200, yPosition + 15, { align: 'right' });
+        doc.text('EIN: 82-5086497', 200, yPosition + 5, { align: 'right' });
         doc.setFont('helvetica', 'italic');
         doc.setFontSize(8);
-        doc.text('501(c)(3) Tax-Exempt Organization', 200, yPosition + 20, { align: 'right' });
-        
-        yPosition += 30;
+        doc.text('501(c)(3) Tax-Exempt Organization', 200, yPosition + 10, { align: 'right' });
+
+        yPosition += 25;
 
         // === HEADER ===
         doc.setFontSize(16);
         doc.setFont('helvetica', 'bold');
         doc.text('DONATION RECEIPT', 105, yPosition, { align: 'center' });
         yPosition += 5;
-        
+
         // Show date range in PDF
         const currentYear = new Date().getFullYear();
         doc.setFontSize(10);
@@ -174,27 +172,27 @@ export default class BupDownloadReceipt extends LightningElement {
         doc.setFont('helvetica', 'bold');
         doc.text('Donor Information:', 15, yPosition);
         yPosition += 5;
-        
+
         doc.setFont('helvetica', 'normal');
         doc.text(`Name: ${contactInfo.Name}`, 15, yPosition);
         yPosition += 5;
-        
+
         if (contactInfo.MailingStreet) {
             doc.text(`Address: ${contactInfo.MailingStreet}`, 15, yPosition);
             yPosition += 5;
-            
+
             let cityStateZip = '';
             if (contactInfo.MailingCity) cityStateZip += contactInfo.MailingCity;
             if (contactInfo.MailingState) cityStateZip += (cityStateZip ? ', ' : '') + contactInfo.MailingState;
             if (contactInfo.MailingPostalCode) cityStateZip += ' ' + contactInfo.MailingPostalCode;
             if (contactInfo.MailingCountry) cityStateZip += (cityStateZip ? ', ' : '') + contactInfo.MailingCountry;
-            
+
             if (cityStateZip) {
                 doc.text(`         ${cityStateZip}`, 15, yPosition);
                 yPosition += 5;
             }
         }
-        
+
         const today = new Date().toLocaleDateString();
         doc.text(`Receipt Date: ${today}`, 15, yPosition);
         yPosition += 10;
@@ -245,6 +243,12 @@ export default class BupDownloadReceipt extends LightningElement {
         doc.setFontSize(11);
         doc.text(`TOTAL DONATION AMOUNT:  $${totalAmount}`, 105, yPosition, { align: 'center' });
         yPosition += 12;
+
+        // === THANK YOU MESSAGE ===
+        doc.setFontSize(10);
+        doc.setFont('helvetica', 'italic');
+        doc.text('Thank you for your generous contribution!', 105, yPosition, { align: 'center' });
+        yPosition += 10;
 
         // === TAX DEDUCTIBILITY STATEMENT ===
         doc.setFontSize(8);
