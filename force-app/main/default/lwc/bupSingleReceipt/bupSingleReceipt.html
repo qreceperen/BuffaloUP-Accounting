@@ -1,0 +1,46 @@
+<template>
+    <lightning-quick-action-panel header="Generate Receipt">
+        <div class="slds-p-around_medium slds-text-align_center">
+
+            <!-- LOADING STATE -->
+            <template lwc:if={isLoading}>
+                <div class="slds-is-relative slds-m-bottom_medium" style="height: 100px;">
+                    <lightning-spinner alternative-text="Processing..." size="medium"></lightning-spinner>
+                </div>
+                <p>Please wait...</p>
+            </template>
+
+            <!-- SELECTION STATE -->
+            <template lwc:elseif={showSelection}>
+                <h2 class="slds-text-heading_medium slds-m-bottom_medium">Who is this receipt for?</h2>
+
+                <div class="slds-grid slds-gutters slds-grid_align-center slds-wrap">
+                    <div class="slds-col slds-m-bottom_small">
+                        <lightning-button variant="brand" label={contactLabel} onclick={handleGenerateForContact}
+                            disabled={isContactDisabled} class="slds-m-horizontal_small"></lightning-button>
+                    </div>
+                    <div class="slds-col slds-m-bottom_small">
+                        <lightning-button variant="brand" label={accountLabel} onclick={handleGenerateForAccount}
+                            disabled={isAccountDisabled} class="slds-m-horizontal_small"></lightning-button>
+                    </div>
+                </div>
+
+                <template lwc:if={noRecipientAvailable}>
+                    <div class="slds-text-color_error slds-m-top_medium">
+                        No Contact or Account information found on this transaction.
+                    </div>
+                </template>
+            </template>
+
+            <!-- SUCCESS STATE -->
+            <template lwc:else>
+                <div class="slds-text-color_success">
+                    <lightning-icon icon-name="action:approval" size="medium"
+                        alternative-text="Success"></lightning-icon>
+                    <h2 class="slds-text-heading_medium slds-m-top_small">Receipt Downloaded!</h2>
+                </div>
+            </template>
+
+        </div>
+    </lightning-quick-action-panel>
+</template>
