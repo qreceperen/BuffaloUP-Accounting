@@ -62,4 +62,34 @@ public with sharing class BUP_ContributionStatementController {
             LIMIT 1
         ];
     }
+    /**
+     * Get single Income Transaction with related Contact info for individual receipt
+     */
+    @AuraEnabled
+    public static Income_Transaction__c getTransactionDetails(Id transactionId) {
+        List<Income_Transaction__c> txns = [
+            SELECT Id,
+                   Name,
+                   Amount__c,
+                   Income_Date__c,
+                   Income_Type__c,
+                   Description__c,
+                   Contact__r.Name,
+                   Contact__r.MailingStreet,
+                   Contact__r.MailingCity,
+                   Contact__r.MailingState,
+                   Contact__r.MailingPostalCode,
+                   Contact__r.MailingCountry,
+                   Account__r.Name,
+                   Account__r.BillingStreet,
+                   Account__r.BillingCity,
+                   Account__r.BillingState,
+                   Account__r.BillingPostalCode,
+                   Account__r.BillingCountry
+            FROM Income_Transaction__c
+            WHERE Id = :transactionId
+            LIMIT 1
+        ];
+        return txns.isEmpty() ? null : txns[0];
+    }
 }
