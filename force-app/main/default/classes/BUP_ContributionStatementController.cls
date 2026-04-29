@@ -92,4 +92,30 @@ public with sharing class BUP_ContributionStatementController {
         ];
         return txns.isEmpty() ? null : txns[0];
     }
+    
+    /**
+     * Get Organization settings (EIN, Name) from Custom Metadata and Standard Organization
+     */
+    @AuraEnabled(cacheable=true)
+    public static Map<String, String> getOrganizationConfig() {
+        Map<String, String> config = new Map<String, String>();
+        
+        // 1. Get standard Organization Name
+        Organization org = [SELECT Name FROM Organization LIMIT 1];
+        config.put('OrgName', org.Name);
+        
+        // 2. Get Custom Metadata config
+        // Using Dynamic SOQL so it compiles even if you haven't deployed the metadata yet
+        try {
+            SObject customSetting = Database.query('SELECT EIN__c, Tax_Deductibility_Statement__c FROM Organization_Setting__mdt LIMIT 1');
+            config.put('EIN', (String)customSetting.get('EIN__c'));
+            config.put('TaxStatement', (String)customSetting.get('Tax_Deductibility_Statement__c'));
+        } catch (Exception e) {
+            // Fallbacks in case the metadata isn't created yet or is empty
+            config.put('EIN', '82-5086497');
+            config.put('TaxStatement', 'Buffalo United for Peace Inc is recognized as tax-exempt under Section 501(c)(3) of the\nInternal Revenue Code. Contributions are deductible under IRC Section 170. No goods or\nservices were provided in exchange for these contributions.\n\nThis contribution is tax-deductible to the extent allowed by law.');
+        }
+        
+        return config;
+    }
 }
